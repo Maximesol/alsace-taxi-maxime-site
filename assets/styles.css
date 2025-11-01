@@ -1,81 +1,128 @@
-/* Minimal clean styles, mobile-first */
+/* === Styles généraux === */
 :root{
-  --bg:#0b1020;--card:#111827;--text:#e5e7eb;--muted:#9ca3af;--accent:#0ea5e9;--accent2:#10b981;
+  --bg:#0b1020;
+  --card:#111827;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --accent:#0ea5e9;
+  --accent2:#10b981;
 }
+
 *{box-sizing:border-box}
-html,body{margin:0;padding:0;font-family:'Inter', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,'Helvetica Neue', Arial, 'Noto Sans', sans-serif;color:var(--text);background:var(--bg)}
+
+html,body{
+  margin:0;
+  padding:0;
+  font-family:'Inter', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  color:var(--text);
+  background:var(--bg);
+}
+
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
+
 .container{max-width:1000px;margin:0 auto;padding:16px}
+
 .header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
 .brand{display:flex;gap:12px;align-items:center}
 .brand img{width:40px;height:40px}
 .brand span{font-weight:700;letter-spacing:.5px}
 .nav a{margin-left:16px;color:var(--muted)}
-/* Section sous la bannière : formulaire centré */
-.hero{
-  display:flex;
-  justify-content:center;
-  margin-top:24px;
-}
-/* Carte du formulaire : largeur élégante */
-.hero .card{
-  width:100%;
-  max-width:760px;   /* 720–820px = zone de confort */
-  margin:0 auto;
-}
-.card{background:var(--card);border:1px solid #1f2937;border-radius:16px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
-h1{font-size:28px;line-height:1.2;margin:0 0 8px}
-h2{font-size:20px;margin:0 0 12px}
-p{color:#c7ccd1}
-.form-grid{display:grid;grid-template-columns:1fr;gap:14px}
-input,select,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid #374151;background:#0f172a;color:var(--text)}
-button{padding:12px 16px;border-radius:12px;border:none;background:linear-gradient(90deg,var(--accent),var(--accent2));color:white;font-weight:700;cursor:pointer}
-.badges{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
-.badge{background:#0f172a;border:1px solid #1f2937;color:#c7ccd1;padding:6px 10px;border-radius:999px;font-size:12px}
-.grid-2{display:grid;grid-template-columns:1fr;gap:16px}
-.footer{margin:24px 0;color:var(--muted);font-size:14px}
-small{color:var(--muted)}
-@media(min-width:860px){
-  
-  .grid-2{grid-template-columns:1fr 1fr}
-  h1{font-size:34px}
-}
-.notice{font-size:12px;color:#9ca3af;margin-top:6px}
-.call{font-size:20px;font-weight:800}
-.kpis{display:flex;gap:16px;flex-wrap:wrap}
-.kpi{flex:1;min-width:160px;background:#0f172a;border:1px solid #1f2937;border-radius:12px;padding:12px}
-.kpi b{display:block;font-size:22px;margin-bottom:4px;color:white}
-ul{margin:8px 0 8px 18px}
-hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
+.btn-call{padding:8px 12px;border:1px solid #1f2937;border-radius:10px;background:#0f172a}
+.btn-call:hover{filter:brightness(1.1)}
+@media(max-width:768px){ .btn-call{display:none} }
 
-/* Section héro (image d'accueil) */
+/* === Section héro === */
 .mast{
   position:relative;
-  min-height:520px;                 /* plus haute, rendu premium */
+  min-height:420px;
   border-radius:16px;
   border:1px solid #1f2937;
   background-image:var(--hero, url('/assets/hero.jpg'));
   background-size:cover;
-  background-position:center 30%;   /* remonte un peu la voiture */
+  background-position:center 30%;
   overflow:hidden;
   margin-bottom:20px;
 }
-
 .mast::after{
   content:"";
   position:absolute; inset:0; border-radius:16px;
-  /* plus de blur → image nette */
   background:linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.42) 70%);
 }
 .mast-content{position:relative;z-index:1;padding:40px 24px;max-width:780px}
+.lead{font-size:16px;color:#c7ccd1;margin:6px 0 0}
+@media(min-width:860px){ .lead{font-size:18px} }
 @media(max-width:768px){
-  .mast{min-height:420px; background-position:center 20%;}
+  .mast{min-height:400px; background-position:center 20%;}
+  .mast-content{padding-top:60px}
 }
 
+/* === Formulaire centré sous la bannière === */
+.hero{
+  display:flex;
+  justify-content:center;
+  margin-top:24px;
+  border-top:1px solid #1f2937;
+  padding-top:24px;
+}
+.hero .card{
+  width:100%;
+  max-width:760px;
+  margin:0 auto;
+}
 
-/* Bouton appel fixe */
-.call-fixed{position:fixed;bottom:20px;right:20px;background:linear-gradient(90deg,var(--accent),var(--accent2));
-  color:#fff;padding:14px 22px;border-radius:999px;font-weight:700;text-decoration:none;
-  box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:9999;transform:translateY(0)}
+/* === Carte / typographies === */
+.card{
+  background:var(--card);
+  border:1px solid #1f2937;
+  border-radius:16px;
+  padding:18px;
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+h1{font-size:28px;line-height:1.2;margin:0 0 8px}
+h2{font-size:20px;margin:0 0 12px}
+p{color:#c7ccd1}
+
+/* === Formulaire === */
+.form-grid{display:grid;grid-template-columns:1fr;gap:14px}
+input,select,textarea{
+  width:100%;
+  padding:14px 16px;
+  border-radius:12px;
+  border:1px solid #374151;
+  background:#0f172a;
+  color:var(--text);
+  font-size:16px;
+}
+button{
+  padding:12px 16px;
+  border-radius:12px;
+  border:none;
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  color:white;
+  font-weight:700;
+  cursor:pointer;
+}
+
+/* === Badges === */
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 0}
+.badge{background:#0f172a;border:1px solid #1f2937;color:#c7ccd1;padding:6px 10px;border-radius:999px;font-size:12px}
+
+/* === Footer === */
+.footer{margin:24px 0;color:var(--muted);font-size:14px}
+small{color:var(--muted)}
+.notice{font-size:12px;color:#9ca3af;margin-top:6px}
+
+/* === Bouton appel flottant === */
+.call-fixed{
+  position:fixed; bottom:20px; right:20px;
+  background:linear-gradient(90deg,var(--accent),var(--accent2));
+  color:#fff; padding:14px 22px; border-radius:999px;
+  font-weight:700; text-decoration:none;
+  box-shadow:0 4px 14px rgba(0,0,0,.3);
+  z-index:9999; transform:translateY(0);
+}
 .call-fixed:hover{transform:translateY(-1px)}
+
+/* === Desktop only === */
+@media(min-width:860px){ h1{font-size:34px} }
