@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Infos TAP – ALSACE TAXI MAXIME</title>
+  <meta name="description" content="Infos transport assis professionnalisé (TAP) : documents, services, villes desservies.">
+  <link rel="icon" href="/assets/logo.svg">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <img src="/assets/logo.svg" alt="ALSACE TAXI MAXIME">
+        <span>ALSACE TAXI MAXIME</span>
+      </div>
+      <nav class="nav">
+        <a href="/">Accueil</a>
+        <a href="/mentions-legales.html">Mentions légales</a>
+        <a href="/confidentialite.html">Confidentialité</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <aside class="card">
+        <h2>Infos médicales (TAP)</h2>
+        <ul>
+          <li>Prescription médicale de transport (Cerfa 11574*07) requise</li>
+          <li>Carte Vitale</li>
+          <li>Transports réguliers : dialyse, chimio, rayons, rééducation</li>
+        </ul>
+        <h2>Services</h2>
+        <ul>
+          <li>Consultations, hospitalisations (entrée/sortie)</li>
+          <li>Gares et aéroports (Entzheim)</li>
+          <li>Accompagnement jusqu’au service</li>
+        </ul>
+        <h2>Villes desservies</h2>
+        <p>Hindisheim (ADS), Erstein (siège), Gerstheim, Benfeld, Matzenheim, Obenheim et communes proches.</p>
+        <small>Pas d’allégation d’affiliation à la CPAM – respect du libre-choix du patient.</small>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      <p>© {year} ALSACE TAXI MAXIME • <a href="tel:+33600000000">06 00 00 00 00</a></p>
+    </footer>
+  </div>
+  <script>
+    document.querySelector('.footer p').innerHTML =
+      document.querySelector('.footer p').innerHTML.replace('{year}', new Date().getFullYear());
+  </script>
+</body>
+</html>
