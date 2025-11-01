@@ -2,30 +2,45 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Taxi conventionné à Hindisheim | ALSACE TAXI MAXIME</title>
+  <meta name="description" content="Taxi conventionné Assurance Maladie à Hindisheim. Transport assis professionnalisé (TAP) pour Erstein, Benfeld, Gerstheim, Matzenheim, Obenheim. Demande de trajet rapide.">
+  <meta name="robots" content="index,follow">
+
+  <link rel="icon" href="/assets/logo.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/styles.css?v=4">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Taxi conventionné à Hindisheim – ALSACE TAXI MAXIME</title>
-  <meta name="description" content="Taxi conventionné Assurance Maladie (transport assis professionnalisé) basé à Hindisheim, desservant Erstein, Gerstheim, Benfeld, Matzenheim, Obenheim et alentours. Devis et demande de trajet en 1 minute.">
-  <link rel="icon" href="/assets/logo.svg">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <meta name="robots" content="index,follow">
-  <link rel="stylesheet" href="/assets/styles.css">
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ALSACE TAXI MAXIME – Taxi conventionné à Hindisheim">
+  <meta property="og:description" content="Transport assis professionnalisé (TAP) dans le secteur d'Erstein et environs. Demande de trajet en 1 minute.">
+  <meta property="og:image" content="/assets/hero.jpg">
+  <meta property="og:url" content="https://alsace-taxi-maxime.fr">
+
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"TaxiService",
     "name":"ALSACE TAXI MAXIME",
     "image":"/assets/logo.svg",
-    "areaServed":[{"@type":"City","name":"Hindisheim"},{"@type":"City","name":"Erstein"},{"@type":"City","name":"Gerstheim"},{"@type":"City","name":"Benfeld"},{"@type":"City","name":"Matzenheim"},{"@type":"City","name":"Obenheim"}],
+    "areaServed":[
+      {"@type":"City","name":"Hindisheim"},
+      {"@type":"City","name":"Erstein"},
+      {"@type":"City","name":"Gerstheim"},
+      {"@type":"City","name":"Benfeld"},
+      {"@type":"City","name":"Matzenheim"},
+      {"@type":"City","name":"Obenheim"}
+    ],
     "address":{"@type":"PostalAddress","addressLocality":"Erstein","postalCode":"67150","addressCountry":"FR"},
     "telephone":"+33 6 00 00 00 00",
     "url":"https://alsace-taxi-maxime.fr",
     "openingHours":"Mo-Su 00:00-23:59",
     "priceRange":"€€",
     "serviceType":"Transport assis professionnalisé (TAP)"
-
   }
   </script>
 </head>
@@ -37,51 +52,60 @@
         <span>ALSACE TAXI MAXIME</span>
       </div>
       <nav class="nav">
-        <a href="#demande">Demander un trajet</a>
         <a href="/infos.html">Infos TAP</a>
         <a href="/mentions-legales.html">Mentions légales</a>
         <a href="/confidentialite.html">Confidentialité</a>
+        <a href="tel:+33600000000" class="btn-call">📞 06 00 00 00 00</a>
       </nav>
     </header>
-    <!-- Section héro -->
-<section class="mast" style="--hero:url('/assets/hero.jpg')">
-  <div class="mast-content">
-    <h1>Taxi conventionné à Hindisheim – Erstein & environs</h1>
-  </div>
-</section>
 
+    <!-- Héro -->
+    <section class="mast" style="--hero:url('/assets/hero.jpg')">
+      <div class="mast-content">
+        <h1>Taxi conventionné à Hindisheim</h1>
+        <p class="lead">TAP – Erstein, Benfeld, Gerstheim, Matzenheim, Obenheim</p>
+      </div>
+    </section>
 
+    <!-- Formulaire centré -->
     <section class="hero" id="demande">
-  <div class="card">
-    <h2>Demander un trajet</h2>
-    <form class="form-grid" method="POST" action="https://formsubmit.co/REPLACE_WITH_YOUR_EMAIL">
-      <!-- quand ton mail sera prêt : contact@alsace-taxi-maxime.fr -->
-      <input type="hidden" name="_subject" value="Demande de trajet - ALSACE TAXI MAXIME">
-      <input type="hidden" name="_template" value="table">
-      <input type="text" name="Nom" placeholder="Votre nom" required>
-      <input type="tel" name="Téléphone" placeholder="Téléphone" required>
-      <input type="text" name="Départ" placeholder="Adresse de départ" required>
-      <input type="text" name="Arrivée" placeholder="Adresse d’arrivée" required>
-      <input type="datetime-local" name="DateHeure" required>
-      <textarea name="Commentaires" rows="3" placeholder="Informations complémentaires (facultatif)"></textarea>
-      <label><input type="checkbox" name="Consentement" required> J’accepte d’être recontacté pour ma demande.</label>
-      <button type="submit">Envoyer la demande</button>
-      <p class="notice">Conforme à l’article 4.3 : aucune incitation commerciale au TAP • Mention autorisée utilisée.</p>
-    </form>
-  </div>
-</section>
-
+      <div class="card">
+        <h2>Demander un trajet</h2>
+        <form class="form-grid" method="POST" action="https://formsubmit.co/REPLACE_WITH_YOUR_EMAIL">
+          <!-- Remplace REPLACE_WITH_YOUR_EMAIL par contact@alsace-taxi-maxime.fr quand créé -->
+          <input type="hidden" name="_subject" value="Demande de trajet - ALSACE TAXI MAXIME">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="Nom" placeholder="Votre nom" required>
+          <input type="tel" name="Téléphone" placeholder="Téléphone" required>
+          <input type="text" name="Départ" placeholder="Adresse de départ" required>
+          <input type="text" name="Arrivée" placeholder="Adresse d’arrivée" required>
+          <input type="datetime-local" name="DateHeure" required>
+          <textarea name="Commentaires" rows="3" placeholder="Informations complémentaires (facultatif)"></textarea>
+          <label><input type="checkbox" name="Consentement" required> J’accepte d’être recontacté pour ma demande.</label>
+          <button type="submit">Envoyer la demande</button>
+          <p class="notice">Conforme art. 4.3 : pas d’incitation commerciale • Mention autorisée uniquement.</p>
+        </form>
+        <hr>
+        <div class="badges">
+          <span class="badge">7j/7 sur réservation</span>
+          <span class="badge">TAP – CPAM 67</span>
+          <span class="badge">Secteur Erstein & environs</span>
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
-      <p>© {year} ALSACE TAXI MAXIME • Basé à Erstein – ADS n°1 Hindisheim • <a href="tel:+33600000000">06 00 00 00 00</a></p>
+      <p>© {year} ALSACE TAXI MAXIME • Basé à Erstein – ADS Hindisheim • <a href="tel:+33600000000">06 00 00 00 00</a></p>
       <small>SIRET : à venir • Email : contact@alsace-taxi-maxime.fr</small>
     </footer>
   </div>
 
   <script>
-    // inject year
-    document.querySelector('.footer p').innerHTML = document.querySelector('.footer p').innerHTML.replace('{year}', new Date().getFullYear());
+    document.querySelector('.footer p').innerHTML =
+      document.querySelector('.footer p').innerHTML.replace('{year}', new Date().getFullYear());
   </script>
+
+  <!-- Bouton appel flottant -->
   <a href="tel:+33600000000" class="call-fixed">📞 Appeler</a>
 </body>
 </html>
