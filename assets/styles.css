@@ -40,13 +40,28 @@ hr{border:0;border-top:1px solid #1f2937;margin:18px 0}
 
 /* Section héro (image d'accueil) */
 .mast{
-  position:relative;min-height:480px;border-radius:16px;border:1px solid #1f2937;
-  background-image:var(--hero, url('/assets/hero.jpg'));background-size:cover;background-position:center;
-  overflow:hidden;margin-bottom:16px;
+  position:relative;
+  min-height:520px;                 /* plus haute, rendu premium */
+  border-radius:16px;
+  border:1px solid #1f2937;
+  background-image:var(--hero, url('/assets/hero.jpg'));
+  background-size:cover;
+  background-position:center 30%;   /* remonte un peu la voiture */
+  overflow:hidden;
+  margin-bottom:16px;
 }
-.mast::after{content:"";position:absolute;inset:0;border-radius:16px;
-  background:rgba(0,0,0,.22);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px)}
+
+.mast::after{
+  content:"";
+  position:absolute; inset:0; border-radius:16px;
+  /* plus de blur → image nette */
+  background:linear-gradient(180deg, rgba(0,0,0,.18), rgba(0,0,0,.42) 70%);
+}
 .mast-content{position:relative;z-index:1;padding:40px 24px;max-width:780px}
+@media(max-width:768px){
+  .mast{min-height:420px; background-position:center 20%;}
+}
+
 
 /* Bouton appel fixe */
 .call-fixed{position:fixed;bottom:20px;right:20px;background:linear-gradient(90deg,var(--accent),var(--accent2));
