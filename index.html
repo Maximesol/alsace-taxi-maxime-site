@@ -70,20 +70,25 @@
     <section class="hero" id="demande">
       <div class="card">
         <h2>Demander un trajet</h2>
-        <form class="form-grid" method="POST" action="https://formsubmit.co/REPLACE_WITH_YOUR_EMAIL">
-          <!-- Remplace REPLACE_WITH_YOUR_EMAIL par contact@alsace-taxi-maxime.fr quand créé -->
-          <input type="hidden" name="_subject" value="Demande de trajet - ALSACE TAXI MAXIME">
-          <input type="hidden" name="_template" value="table">
-          <input type="text" name="Nom" placeholder="Votre nom" required>
-          <input type="tel" name="Téléphone" placeholder="Téléphone" required>
-          <input type="text" name="Départ" placeholder="Adresse de départ" required>
-          <input type="text" name="Arrivée" placeholder="Adresse d’arrivée" required>
-          <input type="datetime-local" name="DateHeure" required>
-          <textarea name="Commentaires" rows="3" placeholder="Informations complémentaires (facultatif)"></textarea>
-          <label><input type="checkbox" name="Consentement" required> J’accepte d’être recontacté pour ma demande.</label>
-          <button type="submit">Envoyer la demande</button>
-          <p class="notice">Conforme art. 4.3 : pas d’incitation commerciale • Mention autorisée uniquement.</p>
-        </form>
+        <form class="form-grid" method="POST" action="https://formsubmit.co/alsace.taximaxime@gmail.com">
+  <input type="hidden" name="_subject" value="Demande de trajet - ALSACE TAXI MAXIME">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://alsace-taxi-maxime.fr/merci.html">
+
+  <input type="text" name="Nom" placeholder="Votre nom" required>
+  <input type="tel" name="Téléphone" placeholder="Téléphone" required>
+  <input type="text" name="Départ" placeholder="Adresse de départ" required>
+  <input type="text" name="Arrivée" placeholder="Adresse d’arrivée" required>
+  <input type="datetime-local" name="DateHeure" required>
+  <textarea name="Commentaires" rows="3" placeholder="Informations complémentaires (facultatif)"></textarea>
+
+  <label><input type="checkbox" name="Consentement" required> J’accepte d’être recontacté pour ma demande.</label>
+
+  <button type="submit">Envoyer la demande</button>
+  <p class="notice">Conforme à l’article 4.3 : aucune incitation commerciale au TAP • Mention autorisée utilisée.</p>
+</form>
+
         <hr>
         <div class="badges">
           <span class="badge">7j/7 sur réservation</span>
