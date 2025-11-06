@@ -74,7 +74,8 @@
   <input type="hidden" name="_subject" value="Demande de trajet - ALSACE TAXI MAXIME">
   <input type="hidden" name="_template" value="table">
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://alsace-taxi-maxime.fr/merci.html">
+  <!-- ICI : mets ton URL Vercel tant que le .fr n’est pas branché -->
+  <input type="hidden" name="_next" value="https://alsace-taxi-maxime-site.vercel.app/merci.html">
 
   <input type="text" name="Nom" placeholder="Votre nom" required>
   <input type="tel" name="Téléphone" placeholder="Téléphone" required>
@@ -82,12 +83,11 @@
   <input type="text" name="Arrivée" placeholder="Adresse d’arrivée" required>
   <input type="datetime-local" name="DateHeure" required>
   <textarea name="Commentaires" rows="3" placeholder="Informations complémentaires (facultatif)"></textarea>
-
   <label><input type="checkbox" name="Consentement" required> J’accepte d’être recontacté pour ma demande.</label>
-
   <button type="submit">Envoyer la demande</button>
   <p class="notice">Conforme à l’article 4.3 : aucune incitation commerciale au TAP • Mention autorisée utilisée.</p>
 </form>
+
 
         <hr>
         <div class="badges">
