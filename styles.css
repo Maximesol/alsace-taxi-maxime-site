@@ -71,6 +71,20 @@ body {
   padding: 0.9rem 0;
   gap: 1rem;
 }
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-phone {
+  padding-inline: 1.1rem;
+  font-size: 0.85rem;
+  background: linear-gradient(135deg, #0ea5e9, #22d3ee);
+  color: #020617;
+  box-shadow: 0 12px 28px rgba(56, 189, 248, 0.25);
+  white-space: nowrap;
+}
 
 .logo-block {
   display: flex;
@@ -455,11 +469,16 @@ textarea:focus {
   .header-inner {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .main-nav {
-    width: 100%;
-    justify-content: flex-start;
+    flex: 1;
     overflow-x: auto;
   }
 
