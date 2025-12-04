@@ -73,7 +73,7 @@
   method="POST"
   id="reservation"
 >
-  <!-- options Formsubmit -->
+  <!-- Options Formsubmit -->
   <input type="hidden" name="_next" value="https://alsace-taxi-maxime-site.vercel.app/merci.html" />
   <input type="hidden" name="_subject" value="Demande de trajet - ALSACE TAXI MAXIME" />
   <input type="hidden" name="_template" value="table" />
@@ -81,7 +81,12 @@
 
   <div class="form-row">
     <label for="name">Nom et prénom</label>
-    <input type="text" id="name" name="Nom" required placeholder="Votre nom complet" />
+    <input type="text" id="name" name="name" required placeholder="Votre nom complet" />
+  </div>
+
+  <div class="form-row">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required placeholder="votre@email.fr" />
   </div>
 
   <div class="form-row">
@@ -112,7 +117,7 @@
 
   <div class="form-row">
     <label for="message">Informations complémentaires</label>
-    <textarea id="message" name="Commentaires" rows="3" placeholder="Précisez si trajet médical, numéro de dossier, etc."></textarea>
+    <textarea id="message" name="Commentaires" rows="3" placeholder="Précisez si trajet médical, transfert, devis etc.."></textarea>
   </div>
 
   <div class="form-row">
