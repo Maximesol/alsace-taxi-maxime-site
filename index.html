@@ -1,115 +1,169 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Taxi conventionné à Hindisheim | ALSACE TAXI MAXIME</title>
-  <meta name="description" content="Taxi conventionné Assurance Maladie à Hindisheim. Transport assis professionnalisé (TAP) pour Erstein, Benfeld, Gerstheim, Matzenheim, Obenheim. Demande de trajet rapide.">
-  <meta name="robots" content="index,follow">
+  <title>ALSACE TAXI MAXIME | Taxi conventionné en Alsace</title>
+  <meta name="description" content="ALSACE TAXI MAXIME, taxi conventionné en Alsace. Transports médicaux, gares, aéroports et longues distances. Disponibilité, ponctualité et service premium.">
 
-  <link rel="icon" href="/assets/logo.png">
+  <!-- Police Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/styles.css?v=4">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- OpenGraph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="ALSACE TAXI MAXIME – Taxi conventionné à Hindisheim">
-  <meta property="og:description" content="Transport assis professionnalisé (TAP) dans le secteur d'Erstein et environs. Demande de trajet en 1 minute.">
-  <meta property="og:image" content="/assets/hero.jpg">
-  <meta property="og:url" content="https://alsace-taxi-maxime.fr">
-
-  <!-- JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"TaxiService",
-    "name":"ALSACE TAXI MAXIME",
-    "image":"/assets/logo.svg",
-    "areaServed":[
-      {"@type":"City","name":"Hindisheim"},
-      {"@type":"City","name":"Erstein"},
-      {"@type":"City","name":"Gerstheim"},
-      {"@type":"City","name":"Benfeld"},
-      {"@type":"City","name":"Matzenheim"},
-      {"@type":"City","name":"Obenheim"}
-    ],
-    "address":{"@type":"PostalAddress","addressLocality":"Erstein","postalCode":"67150","addressCountry":"FR"},
-    "telephone":"+33 6 00 00 00 00",
-    "url":"https://alsace-taxi-maxime.fr",
-    "openingHours":"Mo-Su 00:00-23:59",
-    "priceRange":"€€",
-    "serviceType":"Transport assis professionnalisé (TAP)"
-  }
-  </script>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="brand">
-  <img src="/assets/logo.svg" alt="ALSACE TAXI MAXIME">
-  <span class="sr-only">ALSACE TAXI MAXIME</span>
-</div>
-      <nav class="nav">
-        <a href="/infos.html"> Qui sommes nous ?</a>
-        <a href="/mentions-legales.html">Mentions légales</a>
-        <a href="/confidentialite.html">Confidentialité</a>
-        <a href="tel:0676729327" class="btn-call">📞 06 76 72 93 27 </a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo-block">
+        <img src="assets/logo.png" alt="ALSACE TAXI MAXIME" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">ALSACE TAXI MAXIME</span>
+          <span class="logo-subtitle">Taxi conventionné en Alsace</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="#services">Services</a>
+        <a href="#reservation">Réservation</a>
+        <a href="#contact">Contact</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <!-- Héro -->
-    <section class="mast" style="--hero:url('/assets/hero.jpg')">
-      <div class="mast-content">
-        <h1>Transport de malade assis conventionné</h1>
-      </div>
-    </section>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Votre taxi conventionné en Alsace, disponible 7j/7</h1>
+          <p>
+            Transports médicaux, gares, aéroports et longues distances.
+            Service ponctuel, confortable et 100% adapté à vos besoins.
+          </p>
+          <div class="hero-actions">
+            <a href="#reservation" class="btn primary-btn">Demander un trajet</a>
+            <a href="tel:+33XXXXXXXXX" class="btn ghost-btn">Appeler maintenant</a>
+          </div>
+          <p class="hero-info">
+            Taxi conventionné CPAM – Prise en charge sur ordonnance médicale.
+          </p>
+        </div>
 
-    <!-- Formulaire centré -->
-    <section class="hero" id="demande">
-      <div class="card">
-        <h2>Demander un trajet</h2>
-        <form class="form-grid" method="POST" action="https://formsubmit.co/alsace.taximaxime@gmail.com">
-  <input type="hidden" name="_subject" value="Demande de trajet - ALSACE TAXI MAXIME">
-  <input type="hidden" name="_template" value="table">
-  <input type="hidden" name="_captcha" value="false">
-  <!-- ICI : mets ton URL Vercel tant que le .fr n’est pas branché -->
-  <input type="hidden" name="_next" value="https://alsace-taxi-maxime-site.vercel.app/merci.html">
+        <div class="hero-card">
+          <h2>Réserver un trajet</h2>
+          <p class="hero-card-subtitle">Réponse rapide par téléphone ou SMS.</p>
 
-  <input type="text" name="Nom" placeholder="Votre nom" required>
-  <input type="tel" name="Téléphone" placeholder="Téléphone" required>
-  <input type="text" name="Départ" placeholder="Adresse de départ" required>
-  <input type="text" name="Arrivée" placeholder="Adresse d’arrivée" required>
-  <input type="datetime-local" name="DateHeure" required>
-  <textarea name="Commentaires" rows="3" placeholder="Informations complémentaires (facultatif)"></textarea>
-  <label><input type="checkbox" name="Consentement" required> J’accepte d’être recontacté pour ma demande.</label>
-  <button type="submit">Envoyer la demande</button>
-  <p class="notice">Conforme à l’article 4.3 : aucune incitation commerciale au TAP • Mention autorisée utilisée.</p>
-</form>
+          <form class="booking-form" action="/merci.html" method="GET" id="reservation">
+            <div class="form-row">
+              <label for="name">Nom et prénom</label>
+              <input type="text" id="name" name="name" required placeholder="Votre nom complet" />
+            </div>
 
+            <div class="form-row">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="phone" required placeholder="06..." />
+            </div>
 
-        <hr>
-        <div class="badges">
-          <span class="badge">7j/7 sur réservation</span>
-          <span class="badge">Transports médicaux</span>
-          <span class="badge">Secteur Erstein & environs</span>
+            <div class="form-row form-row-inline">
+              <div>
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div>
+                <label for="time">Heure</label>
+                <input type="time" id="time" name="time" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="from">Lieu de prise en charge</label>
+              <input type="text" id="from" name="from" required placeholder="Adresse, ville..." />
+            </div>
+
+            <div class="form-row">
+              <label for="to">Destination</label>
+              <input type="text" id="to" name="to" required placeholder="Hôpital, gare, aéroport..." />
+            </div>
+
+            <div class="form-row">
+              <label for="message">Informations complémentaires</label>
+              <textarea id="message" name="message" rows="3" placeholder="Précisez si trajet médical, numéro de dossier, etc."></textarea>
+            </div>
+
+            <button type="submit" class="btn primary-btn full-width">
+              Envoyer ma demande
+            </button>
+          </form>
         </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <p>© {year} ALSACE TAXI MAXIME • Basé à Erstein – ADS Hindisheim • <a href="tel:+33676729327">06 76 72 93 27</a></p>
-      <small>SIRET : à venir • Email : contact@alsace-taxi-maxime.fr</small>
-    </footer>
-  </div>
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="section-title">Nos services</h2>
 
-  <script>
-    document.querySelector('.footer p').innerHTML =
-      document.querySelector('.footer p').innerHTML.replace('{year}', new Date().getFullYear());
-  </script>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>Transports médicaux conventionnés</h3>
+            <p>
+              Prise en charge sur prescription médicale, trajets vers hôpitaux, cliniques, centres de soins et spécialistes.
+            </p>
+          </article>
 
-  <!-- Bouton appel flottant -->
-  <a href="tel:+33676729327" class="call-fixed">📞 Appeler</a>
+          <article class="card">
+            <h3>Gares & aéroports</h3>
+            <p>
+              Transferts vers les gares et aéroports de la région, horaires garantis, suivi des retards.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Longues distances</h3>
+            <p>
+              Trajets longue distance en France et pays frontaliers, confort et sécurité à bord.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Zone -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact-layout">
+        <div>
+          <h2 class="section-title">Zone d’intervention</h2>
+          <p>
+            Basé en Alsace, votre taxi intervient dans tout le secteur (villes à préciser ici) et
+            peut vous accompagner sur de plus longues distances.
+          </p>
+        </div>
+        <div class="contact-box">
+          <h3>Contact direct</h3>
+          <p><strong>Téléphone :</strong> <a href="tel:+3376729327">+33 676729327</a></p>
+          <p><strong>Email :</strong> <a href="mailto:contact@alsacetaximaxime.fr">contact@alsacetaximaxime.fr</a></p>
+          <p class="contact-note">Pour les trajets médicaux, pensez à préparer votre ordonnance et votre attestation de droits.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year"></span> ALSACE TAXI MAXIME – Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="/infos.html">Infos / Qui sommes-nous</a>
+        <a href="/mentions-legales.html">Mentions légales</a>
+        <a href="/confidentialite.html">Confidentialité</a>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
