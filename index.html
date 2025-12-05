@@ -68,59 +68,62 @@
 
           <!-- FORMULAIRE FORMSPREE -->
           <form
-            class="booking-form"
-            action="https://formspree.io/f/xvgeqqyp"
-            method="POST"
-            id="reservation"
-          >
-            <input type="hidden" name="_subject" value="Demande de trajet - ALSACE TAXI MAXIME" />
-            <input type="hidden" name="_redirect" value="https://alsace-taxi-maxime-site.vercel.app/merci.html" />
+  class="booking-form"
+  action="https://formspree.io/f/xvgeqqyp"
+  method="POST"
+  id="reservation"
+>
+  <input type="hidden" name="_subject" value="Demande de trajet - ALSACE TAXI MAXIME" />
+  <input type="hidden" name="_redirect" value="https://alsace-taxi-maxime-site.vercel.app/merci.html" />
 
-            <div class="form-row">
-              <label for="name">Nom et prénom</label>
-              <input type="text" id="name" name="name" required placeholder="Votre nom complet" />
-            </div>
+  <div class="form-row">
+    <label for="name">Nom et prénom</label>
+    <input type="text" id="name" name="name" required placeholder="Ex : DUPONT Marie" />
+  </div>
 
-            <div class="form-row">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required placeholder="votre@email.fr" />
-            </div>
+  <div class="form-row">
+    <label for="phone">Téléphone</label>
+    <input type="tel" id="phone" name="telephone" required placeholder="Ex : 06 76 72 93 27" />
+  </div>
 
-            <div class="form-row">
-              <label for="phone">Téléphone</label>
-              <input type="tel" id="phone" name="telephone" required placeholder="06..." />
-            </div>
+  <div class="form-row">
+    <label for="date">Date du trajet</label>
+    <input type="date" id="date" name="date" required />
+  </div>
 
-            <div class="form-row form-row-inline">
-              <div>
-                <label for="date">Date</label>
-                <input type="date" id="date" name="date" required />
-              </div>
-              <div>
-                <label for="time">Heure</label>
-                <input type="time" id="time" name="heure" required />
-              </div>
-            </div>
+  <div class="form-row">
+    <label for="time">Heure du trajet</label>
+    <input type="time" id="time" name="heure" required />
+  </div>
 
-            <div class="form-row">
-              <label for="from">Lieu de prise en charge</label>
-              <input type="text" id="from" name="depart" required placeholder="Adresse, ville..." />
-            </div>
+  <div class="form-row">
+    <label for="from">Lieu de prise en charge</label>
+    <input type="text" id="from" name="depart" required placeholder="Ville ou adresse courte" />
+  </div>
 
-            <div class="form-row">
-              <label for="to">Destination</label>
-              <input type="text" id="to" name="arrivee" required placeholder="Hôpital, gare, aéroport..." />
-            </div>
+  <div class="form-row">
+    <label for="to">Destination</label>
+    <input type="text" id="to" name="arrivee" required placeholder="Hôpital, médecin, gare..." />
+  </div>
 
-            <div class="form-row">
-              <label for="message">Informations complémentaires</label>
-              <textarea id="message" name="commentaires" rows="3" placeholder="Précisez si trajet médical, numéro de dossier, etc."></textarea>
-            </div>
+  <div class="form-row">
+    <label for="type">Type de trajet</label>
+    <select id="type" name="type">
+      <option value="medical">Trajet médical (CPAM)</option>
+      <option value="gare">Gare / Aéroport</option>
+      <option value="autre">Autre trajet</option>
+    </select>
+  </div>
 
-            <button type="submit" class="btn primary-btn full-width">
-              Envoyer ma demande
-            </button>
-          </form>
+  <div class="form-row">
+    <label for="message">Informations utiles (facultatif)</label>
+    <textarea id="message" name="commentaires" rows="3" placeholder="Ex : fauteuil roulant, accompagnant, etc."></textarea>
+  </div>
+
+  <button type="submit" class="btn primary-btn full-width">
+    Envoyer la demande
+  </button>
+</form>
           <!-- FIN FORMULAIRE -->
         </div>
       </div>
