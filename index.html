@@ -7,13 +7,11 @@
   <title>ALSACE TAXI MAXIME | Taxi conventionné CPAM en Alsace</title>
   <meta name="description" content="ALSACE TAXI MAXIME, taxi conventionné CPAM en Alsace. Transports médicaux, gares, aéroports et longues distances. Service ponctuel, confortable et professionnel." />
 
-  <!-- Open Graph / Réseaux sociaux -->
-  <meta property="og:title" content="ALSACE TAXI MAXIME | Taxi conventionné en Alsace" />
-  <meta property="og:description" content="Taxi conventionné CPAM pour vos trajets médicaux, gares, aéroports et longues distances en Alsace." />
   <meta property="og:type" content="website" />
-  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="ALSACE TAXI MAXIME | Taxi conventionné en Alsace" />
+  <meta property="og:description" content="Taxi conventionné CPAM pour vos trajets médicaux, gares, aéroports et longues distances." />
+  <meta property="og:image" content="/assets/hero.jpg" />
   <meta property="og:url" content="https://alsace-taxi-maxime-site.vercel.app/" />
-  <meta property="og:image" content="https://alsace-taxi-maxime-site.vercel.app/assets/hero.jpg" />
 
   <!-- Police Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,177 +21,153 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="/" class="logo-block">
-        <img src="assets/logo.png" alt="ALSACE TAXI MAXIME - Taxi conventionné en Alsace" class="logo-img" />
-        <div class="logo-text">
-          <span class="logo-title">ALSACE TAXI MAXIME</span>
-          <span class="logo-subtitle">Taxi conventionné en Alsace</span>
-        </div>
-      </a>
 
-      <div class="header-right">
-        <nav class="main-nav">
-          <a href="#services">Services</a>
-          <a href="#reservation">Réservation</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-        <a href="tel:+33676729327" class="btn header-phone">0676729327</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="logo-block">
+      <img src="assets/logo.png" alt="ALSACE TAXI MAXIME" class="logo-img" />
+      <div class="logo-text">
+        <span class="logo-title">ALSACE TAXI MAXIME</span>
+        <span class="logo-subtitle">Taxi conventionné en Alsace</span>
       </div>
-    </div>
-  </header>
+    </a>
 
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>Votre taxi conventionné en Alsace, disponible 7j/7</h1>
-          <p>
-            Transports médicaux, gares, aéroports et longues distances.
-            Service ponctuel, confortable et 100% adapté à vos besoins.
-          </p>
-          <div class="hero-actions">
-            <a href="tel:0676729327" class="btn ghost-btn">Appeler maintenant</a>
+    <div class="header-right">
+      <nav class="main-nav">
+        <a href="#services">Services</a>
+        <a href="#reservation">Réservation</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="tel:+33676729327" class="btn header-phone">0676729327</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+
+      <div class="hero-text">
+        <h1>Votre taxi conventionné en Alsace, disponible 7j/7</h1>
+        <p>Transports médicaux, gares, aéroports et longues distances.</p>
+
+        <div class="hero-actions">
+          <a href="tel:0676729327" class="btn ghost-btn">Appeler maintenant</a>
+        </div>
+
+        <p class="hero-info">
+          Taxi conventionné CPAM – Prise en charge sur ordonnance médicale.
+        </p>
+      </div>
+
+      <div class="hero-card">
+        <h2>Demander un trajet</h2>
+
+        <!-- 🚀 FORMULAIRE QUI MARCHAIT AVANT -->
+        <form class="booking-form" method="POST" action="https://formsubmit.co/alsace.taximaxime@gmail.com" id="reservation">
+
+          <input type="hidden" name="_subject" value="Demande de trajet - ALSACE TAXI MAXIME">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://alsace-taxi-maxime-site.vercel.app/merci.html">
+
+          <div class="form-row">
+            <label>Nom</label>
+            <input type="text" name="Nom" required placeholder="Votre nom">
           </div>
-          <p class="hero-info">
-            Taxi conventionné CPAM – Prise en charge sur ordonnance médicale.
-          </p>
-        </div>
 
-        <div class="hero-card">
-          <h2>Réserver un trajet</h2>
-          <p class="hero-card-subtitle">Réponse rapide par téléphone ou SMS.</p>
+          <div class="form-row">
+            <label>Téléphone</label>
+            <input type="tel" name="Téléphone" required placeholder="06...">
+          </div>
 
-          <!-- FORMULAIRE -->
-          <form
-            class="booking-form"
-            target="_blank"
-            action="https://formsubmit.co/be316121dce75bd84d93e881edd25409"
-            method="POST"
-            id="reservation"
-          >
-            <!-- Options Formsubmit -->
-            <input type="hidden" name="_next" value="https://alsace-taxi-maxime-site.vercel.app/merci.html" />
-            <input type="hidden" name="_subject" value="Demande de trajet - ALSACE TAXI MAXIME" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_captcha" value="false" />
+          <div class="form-row">
+            <label>Adresse de départ</label>
+            <input type="text" name="Départ" required placeholder="Adresse de départ">
+          </div>
 
-            <div class="form-row">
-              <label for="name">Nom et prénom</label>
-              <input type="text" id="name" name="name" required placeholder="Votre nom complet" />
-            </div>
+          <div class="form-row">
+            <label>Adresse d’arrivée</label>
+            <input type="text" name="Arrivée" required placeholder="Adresse d’arrivée">
+          </div>
 
-            <div class="form-row">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required placeholder="votre@email.fr" />
-            </div>
+          <div class="form-row">
+            <label>Date et heure</label>
+            <input type="datetime-local" name="DateHeure" required>
+          </div>
 
-            <div class="form-row">
-              <label for="phone">Téléphone</label>
-              <input type="tel" id="phone" name="telephone" required placeholder="06..." />
-            </div>
+          <div class="form-row">
+            <label>Informations complémentaires</label>
+            <textarea name="Commentaires" rows="3" placeholder="Facultatif"></textarea>
+          </div>
 
-            <div class="form-row form-row-inline">
-              <div>
-                <label for="date">Date</label>
-                <input type="date" id="date" name="date" required />
-              </div>
-              <div>
-                <label for="time">Heure</label>
-                <input type="time" id="time" name="heure" required />
-              </div>
-            </div>
+          <label style="font-size:12px;opacity:0.8;">
+            <input type="checkbox" name="Consentement" required>
+            J’accepte d’être recontacté pour ma demande.
+          </label>
 
-            <div class="form-row">
-              <label for="from">Lieu de prise en charge</label>
-              <input type="text" id="from" name="depart" required placeholder="Adresse, ville..." />
-            </div>
-
-            <div class="form-row">
-              <label for="to">Destination</label>
-              <input type="text" id="to" name="arrivee" required placeholder="Hôpital, gare, aéroport..." />
-            </div>
-
-            <div class="form-row">
-              <label for="message">Informations complémentaires</label>
-              <textarea id="message" name="commentaires" rows="3" placeholder="Précisez si trajet médical, numéro de dossier, etc."></textarea>
-            </div>
-
-            <button type="submit" class="btn primary-btn full-width">
-              Envoyer ma demande
-            </button>
-          </form>
-          <!-- FIN FORMULAIRE -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section class="section" id="services">
-      <div class="container">
-        <h2 class="section-title">Nos services</h2>
-
-        <div class="cards-grid">
-          <article class="card">
-            <h3>Transports médicaux conventionnés</h3>
-            <p>
-              Prise en charge sur prescription médicale, trajets vers hôpitaux, cliniques, centres de soins et spécialistes.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Gares & aéroports</h3>
-            <p>
-              Transferts vers les gares et aéroports de la région, horaires garantis, suivi des retards.
-            </p>
-          </article>
-
-          <article class="card">
-            <h3>Longues distances</h3>
-            <p>
-              Trajets longue distance en France et pays frontaliers, confort et sécurité à bord.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact / Zone -->
-    <section class="section section-alt" id="contact">
-      <div class="container contact-layout">
-        <div>
-          <h2 class="section-title">Zone d’intervention</h2>
-          <p>
-            Basé en Alsace, votre taxi intervient dans tout le secteur (villes à préciser ici) et
-            peut vous accompagner sur de plus longues distances.
-          </p>
-        </div>
-        <div class="contact-box">
-          <h3>Contact direct</h3>
-          <p><strong>Téléphone :</strong> <a href="tel:0676729327">0676729327</a></p>
-          <p><strong>Email :</strong> <a href="mailto:contact@alsacetaximaxime.fr">contact@alsacetaximaxime.fr</a></p>
-          <p class="contact-note">Pour les trajets médicaux, pensez à préparer votre ordonnance et votre attestation de droits.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="current-year"></span> ALSACE TAXI MAXIME – Tous droits réservés.</p>
-      <div class="footer-links">
-        <a href="/infos.html">Infos / Qui sommes-nous</a>
-        <a href="/mentions-legales.html">Mentions légales</a>
-        <a href="/confidentialite.html">Confidentialité</a>
+          <button type="submit" class="btn primary-btn full-width">Envoyer la demande</button>
+        </form>
+        <!-- 🚀 FIN DU FORMULAIRE QUI MARCHAIT -->
       </div>
     </div>
+  </section>
 
-    <script>
-      document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
-  </footer>
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title">Nos services</h2>
+
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Transports médicaux</h3>
+          <p>Conventionné CPAM pour trajets médicaux.</p>
+        </article>
+
+        <article class="card">
+          <h3>Gares & Aéroports</h3>
+          <p>Transferts ponctuels, suivi des horaires.</p>
+        </article>
+
+        <article class="card">
+          <h3>Longues distances</h3>
+          <p>Trajets France + pays frontaliers.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-layout">
+      <div>
+        <h2 class="section-title">Zone d’intervention</h2>
+        <p>Alsace et trajets longue distance.</p>
+      </div>
+      <div class="contact-box">
+        <h3>Contact direct</h3>
+        <p><strong>Téléphone :</strong> <a href="tel:0676729327">0676729327</a></p>
+        <p><strong>Email :</strong> <a href="mailto:contact@alsacetaximaxime.fr">contact@alsacetaximaxime.fr</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="current-year"></span> ALSACE TAXI MAXIME – Tous droits réservés.</p>
+    <div class="footer-links">
+      <a href="/infos.html">Infos / Qui sommes-nous</a>
+      <a href="/mentions-legales.html">Mentions légales</a>
+      <a href="/confidentialite.html">Confidentialité</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</footer>
+
 </body>
 </html>
