@@ -69,62 +69,63 @@
 
           <!-- FORMULAIRE -->
           <form
-            class="booking-form"
-            action="https://formsubmit.co/be316121dce75bd84d93e881edd25409"
-            method="POST"
-            id="reservation"
-          >
-            <!-- Options Formsubmit -->
-            <input type="hidden" name="_next" value="https://alsace-taxi-maxime-site.vercel.app/merci.html" />
-            <input type="hidden" name="_subject" value="Demande de trajet - ALSACE TAXI MAXIME" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_captcha" value="false" />
+  target="_blank"
+  action="https://formsubmit.co/be316121dce75bd84d93e881edd25409"
+  method="POST"
+  class="booking-form"
+  id="reservation"
+>
+  <!-- Options Formsubmit -->
+  <input type="hidden" name="_next" value="https://alsace-taxi-maxime-site.vercel.app/merci.html" />
+  <input type="hidden" name="_subject" value="Demande de trajet - ALSACE TAXI MAXIME" />
+  <input type="hidden" name="_template" value="table" />
+  <input type="hidden" name="_captcha" value="false" />
 
-            <div class="form-row">
-              <label for="name">Nom et prénom</label>
-              <input type="text" id="name" name="name" required placeholder="Votre nom complet" />
-            </div>
+  <div class="form-row">
+    <label for="name">Nom et prénom</label>
+    <input type="text" id="name" name="name" required placeholder="Votre nom complet" />
+  </div>
 
-            <div class="form-row">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required placeholder="votre@email.fr" />
-            </div>
+  <div class="form-row">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required placeholder="votre@email.fr" />
+  </div>
 
-            <div class="form-row">
-              <label for="phone">Téléphone</label>
-              <input type="tel" id="phone" name="telephone" required placeholder="06..." />
-            </div>
+  <div class="form-row">
+    <label for="phone">Téléphone</label>
+    <input type="tel" id="phone" name="telephone" required placeholder="06..." />
+  </div>
 
-            <div class="form-row form-row-inline">
-              <div>
-                <label for="date">Date</label>
-                <input type="date" id="date" name="date" required />
-              </div>
-              <div>
-                <label for="time">Heure</label>
-                <input type="time" id="time" name="heure" required />
-              </div>
-            </div>
+  <div class="form-row form-row-inline">
+    <div>
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date" required />
+    </div>
+    <div>
+      <label for="time">Heure</label>
+      <input type="time" id="time" name="heure" required />
+    </div>
+  </div>
 
-            <div class="form-row">
-              <label for="from">Lieu de prise en charge</label>
-              <input type="text" id="from" name="depart" required placeholder="Adresse, ville..." />
-            </div>
+  <div class="form-row">
+    <label for="from">Lieu de prise en charge</label>
+    <input type="text" id="from" name="depart" required placeholder="Adresse, ville..." />
+  </div>
 
-            <div class="form-row">
-              <label for="to">Destination</label>
-              <input type="text" id="to" name="arrivee" required placeholder="Hôpital, gare, aéroport..." />
-            </div>
+  <div class="form-row">
+    <label for="to">Destination</label>
+    <input type="text" id="to" name="arrivee" required placeholder="Hôpital, gare, aéroport..." />
+  </div>
 
-            <div class="form-row">
-              <label for="message">Informations complémentaires</label>
-              <textarea id="message" name="commentaires" rows="3" placeholder="Précisez si trajet médical, numéro de dossier, etc."></textarea>
-            </div>
+  <div class="form-row">
+    <label for="message">Informations complémentaires</label>
+    <textarea id="message" name="commentaires" rows="3" placeholder="Précisez si trajet médical, numéro de dossier, etc."></textarea>
+  </div>
 
-            <button type="submit" class="btn primary-btn full-width">
-              Envoyer ma demande
-            </button>
-          </form>
+  <button type="submit" class="btn primary-btn full-width">
+    Envoyer ma demande
+  </button>
+</form>
           <!-- FIN FORMULAIRE -->
         </div>
       </div>
