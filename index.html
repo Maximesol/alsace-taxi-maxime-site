@@ -12,8 +12,8 @@
   <meta property="og:description" content="Taxi conventionné CPAM pour vos trajets médicaux, gares, aéroports et longues distances en Alsace." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
-  <meta property="og:url" content="https://alsacetaximaxime.fr/" />
-  <meta property="og:image" content="https://alsacetaximaxime.fr/assets/hero.jpg" />
+  <meta property="og:url" content="https://alsace-taxi-maxime-site.vercel.app/" />
+  <meta property="og:image" content="https://alsace-taxi-maxime-site.vercel.app/assets/hero.jpg" />
 
   <!-- Police Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,26 +24,26 @@
 </head>
 <body>
   <header class="site-header">
-  <div class="container header-inner">
-    <a href="/" class="logo-block">
-      <img src="assets/logo.png" alt="ALSACE TAXI MAXIME - Taxi conventionné en Alsace" class="logo-img" />
-      <div class="logo-text">
-        <span class="logo-title">ALSACE TAXI MAXIME</span>
-        <span class="logo-subtitle">Taxi conventionné en Alsace</span>
+    <div class="container header-inner">
+      <a href="/" class="logo-block">
+        <img src="assets/logo.png" alt="ALSACE TAXI MAXIME - Taxi conventionné en Alsace" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">ALSACE TAXI MAXIME</span>
+          <span class="logo-subtitle">Taxi conventionné en Alsace</span>
+        </div>
+      </a>
+
+      <div class="header-right">
+        <nav class="main-nav">
+          <a href="#services">Services</a>
+          <a href="#reservation">Réservation</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="tel:+33676729327" class="btn header-phone">0676729327</a>
       </div>
-    </a>
-
-    <div class="header-right">
-      <nav class="main-nav">
-        <a href="#services">Services</a>
-        <a href="#reservation">Réservation</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <a href="tel:+33676729327" class="btn header-phone">0676729327</a>
     </div>
-  </div>
-</header>
+  </header>
 
   <main>
     <!-- Hero -->
@@ -56,7 +56,7 @@
             Service ponctuel, confortable et 100% adapté à vos besoins.
           </p>
           <div class="hero-actions">
-  <a href="tel:0676729327" class="btn ghost-btn">Appeler maintenant</a>
+            <a href="tel:0676729327" class="btn ghost-btn">Appeler maintenant</a>
           </div>
           <p class="hero-info">
             Taxi conventionné CPAM – Prise en charge sur ordonnance médicale.
@@ -67,63 +67,65 @@
           <h2>Réserver un trajet</h2>
           <p class="hero-card-subtitle">Réponse rapide par téléphone ou SMS.</p>
 
+          <!-- FORMULAIRE -->
           <form
-  class="booking-form"
-  action="https://formsubmit.co/be316121dce75bd84d93e881edd25409"
-  method="POST"
-  id="reservation"
->
-  <!-- Options Formsubmit -->
-  <input type="hidden" name="_next" value="https://alsace-taxi-maxime-site.vercel.app/merci.html" />
-  <input type="hidden" name="_subject" value="Demande de trajet - ALSACE TAXI MAXIME" />
-  <input type="hidden" name="_template" value="table" />
-  <input type="hidden" name="_captcha" value="false" />
+            class="booking-form"
+            action="https://formsubmit.co/be316121dce75bd84d93e881edd25409"
+            method="POST"
+            id="reservation"
+          >
+            <!-- Options Formsubmit -->
+            <input type="hidden" name="_next" value="https://alsace-taxi-maxime-site.vercel.app/merci.html" />
+            <input type="hidden" name="_subject" value="Demande de trajet - ALSACE TAXI MAXIME" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
 
-  <div class="form-row">
-    <label for="name">Nom et prénom</label>
-    <input type="text" id="name" name="name" required placeholder="Votre nom complet" />
-  </div>
+            <div class="form-row">
+              <label for="name">Nom et prénom</label>
+              <input type="text" id="name" name="name" required placeholder="Votre nom complet" />
+            </div>
 
-  <div class="form-row">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required placeholder="votre@email.fr" />
-  </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="votre@email.fr" />
+            </div>
 
-  <div class="form-row">
-    <label for="phone">Téléphone</label>
-    <input type="tel" id="phone" name="telephone" required placeholder="06..." />
-  </div>
+            <div class="form-row">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="telephone" required placeholder="06..." />
+            </div>
 
-  <div class="form-row form-row-inline">
-    <div>
-      <label for="date">Date</label>
-      <input type="date" id="date" name="date" required />
-    </div>
-    <div>
-      <label for="time">Heure</label>
-      <input type="time" id="time" name="heure" required />
-    </div>
-  </div>
+            <div class="form-row form-row-inline">
+              <div>
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div>
+                <label for="time">Heure</label>
+                <input type="time" id="time" name="heure" required />
+              </div>
+            </div>
 
-  <div class="form-row">
-    <label for="from">Lieu de prise en charge</label>
-    <input type="text" id="from" name="depart" required placeholder="Adresse, ville..." />
-  </div>
+            <div class="form-row">
+              <label for="from">Lieu de prise en charge</label>
+              <input type="text" id="from" name="depart" required placeholder="Adresse, ville..." />
+            </div>
 
-  <div class="form-row">
-    <label for="to">Destination</label>
-    <input type="text" id="to" name="arrivee" required placeholder="Hôpital, gare, aéroport..." />
-  </div>
+            <div class="form-row">
+              <label for="to">Destination</label>
+              <input type="text" id="to" name="arrivee" required placeholder="Hôpital, gare, aéroport..." />
+            </div>
 
-  <div class="form-row">
-    <label for="message">Informations complémentaires</label>
-    <textarea id="message" name="commentaires" rows="3" placeholder="Précisez si trajet médical, numéro de dossier, etc."></textarea>
-  </div>
+            <div class="form-row">
+              <label for="message">Informations complémentaires</label>
+              <textarea id="message" name="commentaires" rows="3" placeholder="Précisez si trajet médical, numéro de dossier, etc."></textarea>
+            </div>
 
-  <button type="submit" class="btn primary-btn full-width">
-    Envoyer ma demande
-  </button>
-</form>
+            <button type="submit" class="btn primary-btn full-width">
+              Envoyer ma demande
+            </button>
+          </form>
+          <!-- FIN FORMULAIRE -->
         </div>
       </div>
     </section>
