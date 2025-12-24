@@ -1,55 +1,106 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Infos TAP – ALSACE TAXI MAXIME</title>
-  <meta name="description" content="Infos transport assis professionnalisé (TAP) : documents, services, villes desservies.">
-  <link rel="icon" href="/assets/logo.svg">
-  <link rel="stylesheet" href="/assets/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Qui sommes-nous | ALSACE TAXI MAXIME – Taxi conventionné CPAM</title>
+  <meta name="description" content="ALSACE TAXI MAXIME, taxi conventionné CPAM en Alsace. Transports médicaux assis vers ICANS, Nouvel Hôpital Civil, CHU, Rhena, Clinique Sainte Anne, Clinique de l’Orangerie. Secteur Erstein et environs." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Qui sommes-nous | ALSACE TAXI MAXIME" />
+  <meta property="og:description" content="Taxi conventionné CPAM en Alsace : transports médicaux assis, hôpital de jour, ambulatoire, radiothérapie, chimiothérapie, immunothérapie." />
+  <meta property="og:image" content="/assets/hero.jpg" />
+  <meta property="og:url" content="https://alsace-taxi-maxime-site.vercel.app/infos.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="brand">
-        <img src="/assets/logo.svg" alt="ALSACE TAXI MAXIME">
-        <span>ALSACE TAXI MAXIME</span>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo-block">
+        <img src="assets/logo.png" alt="ALSACE TAXI MAXIME" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">ALSACE TAXI MAXIME</span>
+          <span class="logo-subtitle">Taxi conventionné en Alsace</span>
+        </div>
+      </a>
+
+      <div class="header-right">
+        <nav class="main-nav">
+          <a href="/#services">Services</a>
+          <a href="/#reservation">Réservation</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+
+        <a href="tel:+33676729327" class="btn header-phone">0676729327</a>
       </div>
-      <nav class="nav">
-        <a href="/">Accueil</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Qui sommes-nous</h1>
+
+        <p>
+          <strong>ALSACE TAXI MAXIME</strong> est un <strong>taxi conventionné CPAM</strong> en Alsace.
+          Nous réalisons des <strong>transports médicaux assis</strong> sur réservation, ainsi que des trajets
+          vers gares, aéroports et longues distances.
+        </p>
+
+        <h2 class="section-title" style="margin-top:1.5rem;">Transports médicaux et accompagnement</h2>
+        <p>
+          Nous assurons vos déplacements pour les rendez-vous en <strong>hôpital de jour</strong>,
+          <strong>ambulatoire</strong> ou <strong>hospitalisation</strong>, ainsi que pour les traitements
+          de <strong>radiothérapie</strong>, <strong>chimiothérapie</strong> et <strong>immunothérapie</strong>.
+        </p>
+
+        <p>
+          Les trajets sont fréquemment réalisés vers les établissements suivants :
+          <strong>ICANS</strong>, <strong>Nouvel Hôpital Civil</strong>, <strong>CHU</strong>, <strong>Rhena</strong>,
+          <strong>Clinique Sainte Anne</strong> et <strong>Clinique de l’Orangerie</strong>.
+        </p>
+
+        <h2 class="section-title" style="margin-top:1.5rem;">Zone d’intervention</h2>
+        <p>
+          Nous intervenons notamment à :
+          <strong>Erstein</strong>, <strong>Obernai</strong>, <strong>Matzenheim</strong>, <strong>Osthouse</strong>,
+          <strong>Sand</strong>, <strong>Benfeld</strong>, <strong>Gerstheim</strong>, <strong>Krafft</strong>,
+          <strong>Limersheim</strong>, <strong>Hipsheim</strong>, <strong>Hindisheim</strong>,
+          <strong>Krautergersheim</strong>, <strong>Obenheim</strong> et <strong>Nordhouse</strong>.
+        </p>
+
+        <h2 class="section-title" style="margin-top:1.5rem;">Réservation</h2>
+        <p>
+          Pour réserver, utilisez le formulaire sur la page d’accueil ou appelez directement :
+          <a href="tel:+33676729327">0676729327</a>.
+        </p>
+
+        <p style="margin-top:1.2rem;">
+          <a class="btn primary-btn" href="/">Retour à l’accueil</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year"></span> ALSACE TAXI MAXIME – Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="/infos.html">Infos / Qui sommes-nous</a>
         <a href="/mentions-legales.html">Mentions légales</a>
         <a href="/confidentialite.html">Confidentialité</a>
-      </nav>
-    </header>
+      </div>
+    </div>
 
-    <section class="hero">
-      <aside class="card">
-        <h2>Infos médicales (TAP)</h2>
-        <ul>
-          <li>Prescription médicale de transport (Cerfa 11574*07) requise</li>
-          <li>Carte Vitale</li>
-          <li>Transports réguliers : dialyse, chimio, rayons, rééducation</li>
-        </ul>
-        <h2>Services</h2>
-        <ul>
-          <li>Consultations, hospitalisations (entrée/sortie)</li>
-          <li>Gares et aéroports (Entzheim)</li>
-          <li>Accompagnement jusqu’au service</li>
-        </ul>
-        <h2>Villes desservies</h2>
-        <p>Hindisheim (ADS), Erstein (siège), Gerstheim, Benfeld, Matzenheim, Obenheim et communes proches.</p>
-        <small>Pas d’allégation d’affiliation à la CPAM – respect du libre-choix du patient.</small>
-      </aside>
-    </section>
-
-    <footer class="footer">
-      <p>© {year} ALSACE TAXI MAXIME • <a href="tel:+33600000000">06 00 00 00 00</a></p>
-    </footer>
-  </div>
-  <script>
-    document.querySelector('.footer p').innerHTML =
-      document.querySelector('.footer p').innerHTML.replace('{year}', new Date().getFullYear());
-  </script>
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
