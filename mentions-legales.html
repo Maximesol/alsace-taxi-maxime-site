@@ -1,32 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mentions légales – ALSACE TAXI MAXIME</title>
-  <link rel="stylesheet" href="/assets/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mentions légales | ALSACE TAXI MAXIME</title>
+  <meta name="description" content="Mentions légales du site ALSACE TAXI MAXIME, taxi conventionné CPAM en Alsace." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-<div class="container">
-  <header class="header">
-    <div class="brand"><img src="/assets/logo.svg" alt="logo"><span>ALSACE TAXI MAXIME</span></div>
-    <nav class="nav"><a href="/">Accueil</a></nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo-block">
+        <img src="assets/logo.png" alt="ALSACE TAXI MAXIME" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">ALSACE TAXI MAXIME</span>
+          <span class="logo-subtitle">Taxi conventionné en Alsace</span>
+        </div>
+      </a>
+
+      <a href="tel:+33676729327" class="btn header-phone">0676729327</a>
+    </div>
   </header>
-  <div class="card">
-    <h1>Mentions légales</h1>
-    <p><b>Éditeur :</b> ALSACE TAXI MAXIME</p>
-    <p><b>Siège :</b> Erstein (67150), France</p>
-    <p><b>SIRET :</b> à venir (site mis à jour dès attribution)</p>
-    <p><b>Contact :</b> contact@alsace-taxi-maxime.fr – 06 00 00 00 00</p>
-    <p><b>Hébergement :</b> Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA</p>
-    <hr>
-    <h2>Activité</h2>
-    <p>Taxi conventionné – Transport Assis Professionnalisé (TAP). Respect de l’article 4.3 de la convention-cadre : aucune publicité incitant à l’usage du TAP ; seule la mention “transport assis professionnalisé conventionné Assurance Maladie” est utilisée.</p>
-    <h2>Propriété intellectuelle</h2>
-    <p>Contenus et visuels protégés. Toute reproduction nécessite autorisation.</p>
-  </div>
-  <footer class="footer"><small>© {year} ALSACE TAXI MAXIME</small></footer>
-</div>
-<script>document.body.innerHTML=document.body.innerHTML.replace('{year}', new Date().getFullYear());</script>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Mentions légales</h1>
+
+        <h2>Éditeur du site</h2>
+<p>
+  <strong>ALSACE TAXI MAXIME</strong><br>
+  Directeur de publication : <strong>Maxime [NOM]</strong><br>
+  Activité : Taxi conventionné CPAM<br>
+  Téléphone : <a href="tel:+33676729327">0676729327</a><br>
+  Email : <a href="mailto:alsace.taximaxime@gmail.com">alsace.taximaxime@gmail.com</a><br>
+  SIRET : <strong>992 015 818</strong><br>
+  ADS (autorisation de stationnement) : <strong>N° 1 Hindisheim</strong><br>
+  
+</p>
+
+        <h2>Hébergement</h2>
+<p>
+  Le site est hébergé par :<br>
+  <strong>OVH SAS</strong><br>
+  2 rue Kellermann<br>
+  59100 Roubaix – France
+</p>
+
+        <h2>Propriété intellectuelle</h2>
+        <p>
+          L’ensemble des contenus présents sur ce site (textes, images, logo, structure)
+          est la propriété exclusive de ALSACE TAXI MAXIME, sauf mention contraire.
+          Toute reproduction est interdite sans autorisation préalable.
+        </p>
+
+        <h2>Responsabilité</h2>
+        <p>
+          ALSACE TAXI MAXIME s’efforce de fournir des informations exactes et à jour.
+          Toutefois, aucune garantie n’est apportée quant à l’exactitude ou l’exhaustivité
+          des informations présentes sur le site.
+        </p>
+
+        <p style="margin-top:1.2rem;">
+          <a class="btn primary-btn" href="/">Retour à l’accueil</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year"></span> ALSACE TAXI MAXIME – Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="/infos.html">Infos / Qui sommes-nous</a>
+        <a href="/mentions-legales.html">Mentions légales</a>
+        <a href="/confidentialite.html">Confidentialité</a>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
