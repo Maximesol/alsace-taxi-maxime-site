@@ -1,24 +1,107 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Confidentialité – ALSACE TAXI MAXIME</title>
-  <link rel="stylesheet" href="/assets/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Politique de confidentialité | ALSACE TAXI MAXIME</title>
+  <meta name="description" content="Politique de confidentialité du site ALSACE TAXI MAXIME (taxi conventionné CPAM en Alsace) : données collectées, finalités, durée de conservation et droits RGPD." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-<div class="container">
-  <header class="header">
-    <div class="brand"><img src="/assets/logo.svg" alt="logo"><span>ALSACE TAXI MAXIME</span></div>
-    <nav class="nav"><a href="/">Accueil</a></nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo-block">
+        <img src="assets/logo.png" alt="ALSACE TAXI MAXIME" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">ALSACE TAXI MAXIME</span>
+          <span class="logo-subtitle">Taxi conventionné en Alsace</span>
+        </div>
+      </a>
+
+      <a href="tel:+33676729327" class="btn header-phone">0676729327</a>
+    </div>
   </header>
-  <div class="card">
-    <h1>Confidentialité & RGPD</h1>
-    <p>Les données du formulaire (nom, téléphone, adresses, date/heure) sont utilisées uniquement pour répondre à votre demande de trajet puis archivées selon les obligations légales. Vous pouvez demander leur suppression à tout moment : contact@alsace-taxi-maxime.fr.</p>
-    <p>Pas de cookies publicitaires. Mesure d’audience simple possible (Search Console).</p>
-  </div>
-  <footer class="footer"><small>© {year} ALSACE TAXI MAXIME</small></footer>
-</div>
-<script>document.body.innerHTML=document.body.innerHTML.replace('{year}', new Date().getFullYear());</script>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Politique de confidentialité</h1>
+
+        <p>
+          Cette politique explique comment <strong>ALSACE TAXI MAXIME</strong> traite les données personnelles
+          collectées via le site internet et le formulaire de demande de trajet.
+        </p>
+
+        <h2>Données collectées</h2>
+        <p>
+          Lorsque vous utilisez le formulaire, nous pouvons collecter : <strong>nom</strong>, <strong>téléphone</strong>,
+          <strong>email</strong>, <strong>adresse de départ</strong>, <strong>destination</strong>, <strong>date/heure</strong>,
+          ainsi que toute information que vous indiquez dans le champ “commentaires”.
+        </p>
+
+        <h2>Finalité du traitement</h2>
+        <p>
+          Les données sont utilisées uniquement pour : traiter votre demande de trajet, vous recontacter (appel/SMS/email),
+          organiser le transport et assurer le suivi de votre réservation.
+        </p>
+
+        <h2>Base légale</h2>
+        <p>
+          Le traitement est fondé sur votre <strong>consentement</strong> (envoi volontaire du formulaire) et/ou sur la
+          <strong>nécessité contractuelle</strong> pour organiser un transport demandé.
+        </p>
+
+        <h2>Durée de conservation</h2>
+        <p>
+          Les données sont conservées pendant la durée nécessaire au traitement de la demande, puis archivées ou supprimées
+          selon les obligations légales et la gestion administrative.
+        </p>
+
+        <h2>Destinataires</h2>
+        <p>
+          Les données sont destinées uniquement à <strong>ALSACE TAXI MAXIME</strong>. Le formulaire est transmis via un
+          prestataire technique (Formspree) pour l’envoi des demandes.
+        </p>
+
+        <h2>Vos droits (RGPD)</h2>
+        <p>
+          Vous disposez d’un droit d’accès, de rectification, d’effacement, d’opposition et de limitation.
+          Pour exercer vos droits, contactez-nous :
+          <a href="mailto:alsace.taximaxime@gmail.com">alsace.taximaxime@gmail.com</a>.
+        </p>
+
+        <h2>Cookies</h2>
+        <p>
+          Le site ne dépose pas de cookies publicitaires. Des cookies techniques peuvent être utilisés pour le bon
+          fonctionnement du site et la sécurité.
+        </p>
+
+        <p style="margin-top:1.2rem;">
+          <a class="btn primary-btn" href="/">Retour à l’accueil</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year"></span> ALSACE TAXI MAXIME – Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="/infos.html">Infos / Qui sommes-nous</a>
+        <a href="/mentions-legales.html">Mentions légales</a>
+        <a href="/confidentialite.html">Confidentialité</a>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
