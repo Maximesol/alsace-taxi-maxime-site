@@ -497,4 +497,6 @@ textarea:focus {
   .form-row-inline {
     flex-direction: column;
   }
+   a { color: inherit; }
+a:hover { text-decoration: underline; }
 }
