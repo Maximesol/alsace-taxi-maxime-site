@@ -503,3 +503,12 @@ textarea:focus {
    a { color: inherit; }
 a:hover { text-decoration: underline; }
 }
+.hero-link {
+  color: #4da3ff;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.hero-link:hover {
+  color: #7bbcff;
+}
