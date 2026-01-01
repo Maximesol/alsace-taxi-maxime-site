@@ -465,6 +465,9 @@ textarea:focus {
   }
 }
 
+#taxi-erstein-details a { text-decoration: underline; }
+#taxi-erstein-details a:hover { opacity: .85; }
+
 @media (max-width: 640px) {
   .header-inner {
     flex-direction: column;
