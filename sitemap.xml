@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://alsace-taxi-maxime.fr/</loc></url>
-  <url><loc>https://alsace-taxi-maxime.fr/mentions-legales.html</loc></url>
-  <url><loc>https://alsace-taxi-maxime.fr/confidentialite.html</loc></url>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://www.alsace-taxi-maxime.fr/</loc>
+  </url>
+
+  <url>
+    <loc>https://www.alsace-taxi-maxime.fr/taxi-erstein.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.alsace-taxi-maxime.fr/taxi-gerstheim.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.alsace-taxi-maxime.fr/infos.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.alsace-taxi-maxime.fr/mentions-legales.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.alsace-taxi-maxime.fr/confidentialite.html</loc>
+  </url>
+
 </urlset>
