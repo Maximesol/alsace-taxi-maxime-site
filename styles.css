@@ -508,6 +508,16 @@ a:hover { text-decoration: underline; }
   font-weight: 600;
   text-decoration: underline;
 }
+/* Liens informatifs (évite le violet/bleu par défaut) */
+.info-link{
+  color: #9ad7ff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+.info-link:hover{
+  color: #c8ecff;
+}
 
 .hero-link:hover {
   color: #7bbcff;
