@@ -1,30 +1,63 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17771925884"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-17771925884');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17771925884"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17771925884');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>VSL à Erstein : transport médical assis | ALSACE TAXI MAXIME</title>
-  <meta name="description" content="VSL à Erstein : informations sur le transport médical assis, la différence VSL / taxi conventionné, et les trajets vers hôpitaux et cliniques. Page informative." />
+  <title>VSL Erstein — Transport médical assis | ALSACE TAXI MAXIME</title>
+  <meta name="description" content="Vous cherchez un VSL à Erstein ? ALSACE TAXI MAXIME est un taxi conventionné qui assure les transports médicaux assis vers ICANS, CHU, Clinique Sainte-Anne, Rhena. Basé à Erstein, disponible 7j/7." />
   <link rel="canonical" href="https://www.alsace-taxi-maxime.fr/vsl-erstein.html" />
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css" />
   <link rel="icon" type="image/png" href="/favicon.png" />
-  <link rel="apple-touch-icon" href="/favicon.png">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"TaxiService","name":"ALSACE TAXI MAXIME","url":"https://www.alsace-taxi-maxime.fr/vsl-erstein.html","telephone":"+33676729327","image":"https://www.alsace-taxi-maxime.fr/assets/logo.png","description":"Taxi conventionné assurant les transports médicaux assis à Erstein et dans tout le secteur.","areaServed":[{"@type":"City","name":"Erstein"},{"@type":"City","name":"Benfeld"},{"@type":"City","name":"Obernai"},{"@type":"City","name":"Matzenheim"},{"@type":"City","name":"Gerstheim"},{"@type":"City","name":"Hindisheim"},{"@type":"City","name":"Plobsheim"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qu'est-ce qu'un VSL ?","acceptedAnswer":{"@type":"Answer","text":"VSL signifie Véhicule Sanitaire Léger. C'est un véhicule sanitaire dédié au transport de patients pouvant voyager en position assise, au même titre que le taxi conventionné."}},{"@type":"Question","name":"Quelle est la différence entre un VSL et un taxi conventionné ?","acceptedAnswer":{"@type":"Answer","text":"Le VSL appartient à une société d'ambulances. Le taxi conventionné est un taxi autorisé par l'Assurance Maladie à réaliser des transports médicaux assis. C'est le médecin prescripteur qui choisit le mode de transport."}},{"@type":"Question","name":"Peut-on demander un taxi conventionné à la place d'un VSL ?","acceptedAnswer":{"@type":"Answer","text":"Si votre médecin prescrit un transport médical assis, il peut indiquer taxi conventionné sur l'ordonnance. Renseignez-vous auprès de votre médecin."}},{"@type":"Question","name":"Quels hôpitaux sont desservis depuis Erstein ?","acceptedAnswer":{"@type":"Answer","text":"ALSACE TAXI MAXIME assure les trajets depuis Erstein vers l'ICANS, le Nouvel Hôpital Civil, le CHU Hautepierre, Rhena, la Clinique Sainte-Anne et la Clinique de l'Orangerie."}},{"@type":"Question","name":"ALSACE TAXI MAXIME intervient-il dans toute la région ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Basé à Erstein avec une ADS de Hindisheim, nous pouvons intervenir partout sur réservation : Benfeld, Obernai, Matzenheim, Gerstheim, Plobsheim et tout le secteur environnant."}}]}
+  </script>
+  <style>
+    .sticky-call{display:none}
+    @media(max-width:768px){
+      .sticky-call{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:100;background:linear-gradient(135deg,#0ea5e9,#22d3ee);color:#020617;font-weight:700;font-size:1.1rem;text-decoration:none;align-items:center;justify-content:center;gap:.6rem;padding:1rem;box-shadow:0 -4px 24px rgba(14,165,233,.4)}
+      .sticky-call svg{width:22px;height:22px;flex-shrink:0}
+      body{padding-bottom:64px}
+    }
+    .faq-list{display:flex;flex-direction:column;gap:.75rem;max-width:780px}
+    .faq-item{background:linear-gradient(135deg,rgba(15,23,42,.9),rgba(15,23,42,.98));border:1px solid rgba(30,64,175,.7);border-radius:14px;overflow:hidden}
+    .faq-question{width:100%;background:none;border:none;color:var(--color-white);font-size:.97rem;font-weight:500;text-align:left;padding:1rem 1.2rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;font-family:inherit}
+    .faq-question:hover{color:var(--color-primary)}
+    .faq-icon{flex-shrink:0;width:20px;height:20px;color:var(--color-primary);transition:transform .25s ease}
+    .faq-item.open .faq-icon{transform:rotate(45deg)}
+    .faq-answer{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .3s ease;padding:0 1.2rem;font-size:.9rem;color:var(--color-text-soft);line-height:1.65}
+    .faq-item.open .faq-answer{max-height:300px;padding:0 1.2rem 1rem}
+    .avis-bloc{display:flex;align-items:center;gap:.5rem;margin-top:1rem}
+    .avis-etoiles{color:#facc15;font-size:1.1rem}
+    .avis-texte{font-size:.85rem;color:var(--color-text-soft)}
+    .etab-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.25rem}
+    .etab-card{background:linear-gradient(135deg,rgba(15,23,42,.9),rgba(15,23,42,.98));border:1px solid rgba(30,64,175,.6);border-radius:14px;padding:1rem 1.1rem}
+    .etab-card h3{font-size:.95rem;color:var(--color-white);margin-bottom:.35rem}
+    .etab-card p{font-size:.85rem;color:var(--color-text-soft)}
+    @media(max-width:768px){.etab-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:480px){.etab-grid{grid-template-columns:1fr}}
+    .info-bloc{background:rgba(14,165,233,.07);border-left:3px solid var(--color-primary);border-radius:0 10px 10px 0;padding:.9rem 1.1rem;margin:1.5rem 0;font-size:.9rem;color:var(--color-text-soft);line-height:1.6}
+  </style>
 </head>
-
 <body>
 
-  <!-- Header identique -->
+  <a href="tel:+33676729327" class="sticky-call" aria-label="Appeler ALSACE TAXI MAXIME">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+    Appeler — 06 76 72 93 27
+  </a>
+
   <header class="site-header">
     <div class="container header-inner">
       <a href="/" class="logo-block">
@@ -34,142 +67,181 @@
           <span class="logo-subtitle">Taxi conventionné en Alsace</span>
         </div>
       </a>
-
       <div class="header-right">
         <nav class="main-nav">
+          <a href="/">Accueil</a>
           <a href="/#services">Services</a>
           <a href="/#reservation">Réservation</a>
           <a href="/#contact">Contact</a>
         </nav>
-
-        <a href="tel:+33676729327" class="btn header-phone">0676729327</a>
+        <a href="tel:+33676729327" class="btn header-phone">06 76 72 93 27</a>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- Hero moderne -->
     <section class="hero">
       <div class="container hero-inner">
-
         <div class="hero-text">
-          <h1>VSL à Erstein : transport médical assis (infos)</h1>
-          <p>
-            Cette page explique ce que signifie “VSL”, ce qu’est un transport médical assis,
-            et la différence entre VSL et taxi conventionné. (Contenu informatif.)
-          </p>
-
+          <h1>VSL à Erstein — Transport médical assis</h1>
+          <p>Vous recherchez un VSL à Erstein ou dans le secteur ? <strong>ALSACE TAXI MAXIME</strong> est un <strong>taxi conventionné</strong> basé à Erstein qui assure les <strong>transports médicaux assis</strong> sur prescription vers les hôpitaux et cliniques de Strasbourg et d'Alsace.</p>
+          <p>Disponible 7j/7, nous intervenons à Erstein, <a href="/taxi-benfeld.html" class="hero-link">Benfeld</a>, <a href="/taxi-obernai.html" class="hero-link">Obernai</a>, <a href="/taxi-matzenheim.html" class="hero-link">Matzenheim</a>, <a href="/taxi-gerstheim.html" class="hero-link">Gerstheim</a> et tout le secteur sur réservation.</p>
           <div class="hero-actions">
-            <a href="/taxi-erstein.html" class="btn primary-btn">Taxi à Erstein</a>
+            <a href="tel:+33676729327" class="btn primary-btn">📞 Appeler maintenant</a>
             <a href="/#reservation" class="btn ghost-btn">Demander un trajet</a>
           </div>
-
-          <p class="hero-info">Important : le mode de transport est décidé par le médecin prescripteur.</p>
+          <div class="avis-bloc">
+            <span class="avis-etoiles">★★★★★</span>
+            <span class="avis-texte">5/5 — 15 avis Google</span>
+          </div>
+          <p class="hero-info" style="margin-top:.5rem">Taxi conventionné — Basé à Erstein — ADS Hindisheim</p>
         </div>
-
         <div class="hero-card">
-          <h2>Infos rapides</h2>
-          <p class="hero-card-subtitle">Points clés</p>
-
-          <ul style="margin:0; padding-left:18px; line-height:1.6;">
-            <li>Le transport médical assis peut être réalisé par différents modes de transport (VSL ou taxi conventionné), selon la décision du médecin prescripteur et la réglementation en vigueur.</li>
-            <li>Un Transport médical assis = VSL ou taxi conventionné</li>
-            <li>Une prescription médicale délivrée par le médecin est nécessaire (Bon de transport) pour le trajet</li>
+          <h2>Transport médical assis</h2>
+          <p class="hero-card-subtitle">Ce qu'il faut savoir</p>
+          <ul style="margin:0;padding-left:18px;line-height:1.9;font-size:.9rem;color:var(--color-text-soft)">
+            <li>Le <strong style="color:var(--color-text)">transport médical assis</strong> regroupe VSL et taxi conventionné</li>
+            <li>Le <strong style="color:var(--color-text)">médecin prescripteur</strong> choisit le mode de transport</li>
+            <li>Une <strong style="color:var(--color-text)">prescription médicale</strong> est nécessaire pour le trajet</li>
+            <li>ALSACE TAXI MAXIME est un <strong style="color:var(--color-text)">taxi conventionné</strong>, pas un VSL</li>
+            <li>Trajets vers <strong style="color:var(--color-text)">Strasbourg et toute l'Alsace</strong></li>
           </ul>
-
-          <div style="margin-top:14px;">
-            <a href="tel:+33676729327" class="btn primary-btn full-width">Appeler</a>
+          <div style="margin-top:1rem">
+            <a href="tel:+33676729327" class="btn primary-btn full-width">Appeler le 06 76 72 93 27</a>
           </div>
         </div>
-
       </div>
     </section>
 
-    <!-- Contenu en cards -->
-    <section class="section" id="vsl-erstein-details">
+    <section class="section" id="vsl-vs-taxi">
       <div class="container">
-        <h2 class="section-title">Comprendre “VSL” à Erstein</h2>
-
+        <h2 class="section-title">VSL et taxi conventionné à Erstein : quelle différence ?</h2>
+        <p>Lorsqu'un patient à <strong>Erstein</strong> ou dans le secteur recherche un <strong>VSL</strong>, il cherche en réalité un <strong>transport médical assis</strong> — un véhicule pour se rendre à l'hôpital ou chez un spécialiste sur prescription médicale.</p>
+        <div class="info-bloc">ℹ️ <strong>Important :</strong> ALSACE TAXI MAXIME est un <strong>taxi conventionné</strong>, et non un VSL. Le VSL est un véhicule sanitaire léger géré par des sociétés d'ambulances. Le taxi conventionné est un taxi autorisé par l'Assurance Maladie à réaliser des transports médicaux assis. <strong>Les deux sont des formes de transport médical assis.</strong> C'est votre médecin qui décide du mode de transport adapté à votre situation.</div>
         <div class="cards-grid">
           <article class="card">
-            <h3>Que veut dire VSL ?</h3>
-            <p>
-              VSL signifie <strong>Véhicule Sanitaire Léger</strong>. Le terme est souvent utilisé
-              dans les recherches Google autour du <strong>transport médical assis</strong>.
-            </p>
+            <h3>Le VSL</h3>
+            <p>Véhicule Sanitaire Léger, exploité par une société d'ambulances agréée. Réservé aux patients pouvant voyager en position assise sur prescription. Le médecin peut prescrire un VSL ou un taxi conventionné selon votre situation.</p>
           </article>
-
           <article class="card">
-            <h3>Qu’est-ce qu’un transport médical assis ?</h3>
-            <p>
-              Il s’agit d’un transport pour des patients pouvant voyager en position assise.
-              La nécessité et les conditions dépendent d’une <strong>décision médicale</strong>.
-            </p>
+            <h3>Le taxi conventionné</h3>
+            <p>Taxi autorisé par l'Assurance Maladie à effectuer des transports médicaux assis. ALSACE TAXI MAXIME est un taxi conventionné basé à <strong>Erstein</strong>, titulaire d'une ADS de Hindisheim, disponible 7j/7 pour vos trajets médicaux.</p>
           </article>
-
           <article class="card">
-            <h3>Différence VSL / taxi conventionné</h3>
-            <p>
-              Un VSL est un véhicule sanitaire dédié. Un taxi conventionné est un taxi autorisé
-              à effectuer des <strong>transports médicaux</strong> selon les règles en vigueur.
-              Le choix du mode de transport appartient au prescripteur.
-            </p>
+            <h3>Transport médical assis</h3>
+            <p>Terme générique qui regroupe VSL et taxi conventionné. Si vous cherchez un <strong>VSL à Erstein</strong>, un taxi conventionné peut assurer le même type de trajet sur prescription médicale.</p>
           </article>
         </div>
+      </div>
+    </section>
 
-        <div style="margin-top:26px;">
-          <h2 class="section-title">Établissements souvent concernés</h2>
-          <p>
-            Les trajets peuvent concerner des hôpitaux, cliniques et centres spécialisés
-            (ICANS, Hôpital Civil, Hautepierre, Clinique Rhéna, etc.).
-          </p>
-          <p style="opacity:.9">
-            Cette page a un objectif strictement informatif.
-          </p>
+    <section class="section section-alt" id="hopitaux">
+      <div class="container">
+        <h2 class="section-title">Trajets médicaux depuis Erstein vers Strasbourg</h2>
+        <p>ALSACE TAXI MAXIME assure les transports médicaux assis depuis <strong>Erstein</strong> et tout le secteur vers les principaux établissements de santé de <strong>Strasbourg</strong> et d'Alsace. Radiothérapie, chimiothérapie, immunothérapie, hôpital de jour, hospitalisation, ambulatoire — nous adaptons nos disponibilités à vos rendez-vous.</p>
+        <div class="etab-grid">
+          <div class="etab-card"><h3>ICANS</h3><p>Institut de Cancérologie Strasbourg Europe. Trajets réguliers pour radiothérapie, chimiothérapie et immunothérapie.</p></div>
+          <div class="etab-card"><h3>Nouvel Hôpital Civil</h3><p>Centre hospitalier universitaire de Strasbourg. Consultations, hospitalisations et soins spécialisés.</p></div>
+          <div class="etab-card"><h3>CHU Hautepierre</h3><p>Hôpital universitaire, spécialités médicales et chirurgicales. Trajets depuis Erstein et le secteur.</p></div>
+          <div class="etab-card"><h3>Clinique Rhena</h3><p>Clinique privée à Strasbourg. Consultations, chirurgie ambulatoire et hospitalisations.</p></div>
+          <div class="etab-card"><h3>Clinique Sainte-Anne</h3><p>Clinique spécialisée à Strasbourg. Trajets médicaux assis sur prescription depuis Erstein.</p></div>
+          <div class="etab-card"><h3>Clinique de l'Orangerie</h3><p>Clinique privée strasbourgeoise. Transport médical assis sur ordonnance médicale.</p></div>
         </div>
+        <p style="margin-top:1.25rem;font-size:.9rem;color:var(--color-text-soft)">Tout autre établissement sur prescription : centre de dialyse, centre de rééducation, cabinet spécialisé, centre de radiologie, médecin spécialiste…</p>
+      </div>
+    </section>
 
-        <div style="margin-top:18px;">
-          <p>
-            Voir aussi : <a href="/taxi-erstein.html">Taxi à Erstein</a>
-          </p>
+    <section class="section" id="secteur">
+      <div class="container">
+        <h2 class="section-title">Zone d'intervention</h2>
+        <p>
+          Basé à <strong>Erstein (67150)</strong> et titulaire d'une autorisation de stationnement de <strong>Hindisheim</strong>,
+          ALSACE TAXI MAXIME intervient <strong>partout sur réservation</strong> — que ce soit dans le secteur immédiat,
+          vers Strasbourg et ses environs, ou pour des trajets longue distance en France.
+        </p>
+        <p style="margin-top:0.75rem;">
+          Aucune destination n'est trop proche ou trop lointaine. Il suffit de réserver à l'avance.
+          Nous nous adaptons à vos rendez-vous médicaux, vos horaires de train ou d'avion,
+          et vos contraintes personnelles.
+        </p>
+        <div style="margin-top:1.25rem;">
+          <a href="tel:+33676729327" class="btn primary-btn">📞 Nous appeler pour un devis</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <h2 class="section-title">Questions fréquentes — VSL et transport médical à Erstein</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Qu'est-ce qu'un VSL ?<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></button>
+            <div class="faq-answer">VSL signifie Véhicule Sanitaire Léger. C'est un véhicule sanitaire dédié au transport de patients pouvant voyager en position assise. Il fait partie des modes de transport médical assis reconnus, au même titre que le taxi conventionné.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Quelle est la différence entre un VSL et un taxi conventionné ?<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></button>
+            <div class="faq-answer">Le VSL appartient à une société d'ambulances agréée. Le taxi conventionné est un taxi autorisé par l'Assurance Maladie à réaliser des transports médicaux assis. Les deux permettent les mêmes trajets médicaux sur prescription. C'est le médecin prescripteur qui choisit le mode de transport.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Peut-on demander un taxi conventionné à la place d'un VSL ?<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></button>
+            <div class="faq-answer">Si votre médecin prescrit un transport médical assis, il peut indiquer taxi conventionné sur l'ordonnance. Le taxi conventionné assure le même type de trajet médical assis. Renseignez-vous auprès de votre médecin pour qu'il indique le mode adapté.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Quels hôpitaux sont desservis depuis Erstein ?<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></button>
+            <div class="faq-answer">Nous assurons les trajets depuis Erstein vers l'ICANS, le Nouvel Hôpital Civil, le CHU Hautepierre, Rhena, la Clinique Sainte-Anne et la Clinique de l'Orangerie à Strasbourg, ainsi que tout autre établissement sur prescription médicale.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">ALSACE TAXI MAXIME intervient-il dans toute la région ?<svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></button>
+            <div class="faq-answer">Oui. Basé à Erstein avec une ADS de Hindisheim, nous pouvons intervenir partout sur réservation : Benfeld, Obernai, Matzenheim, Gerstheim, Plobsheim, Osthouse, Sand, Hindisheim et tout le secteur, ainsi que partout en France pour les longues distances.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-layout">
+        <div>
+          <h2 class="section-title">Réserver un transport médical assis depuis Erstein</h2>
+          <p>Pour tout trajet médical sur prescription depuis Erstein ou le secteur, contactez directement ALSACE TAXI MAXIME par téléphone ou SMS. Munissez-vous de votre prescription médicale de transport le jour du trajet.</p>
+          <p style="margin-top:.75rem">Voir aussi : <a href="/taxi-erstein.html" class="info-link">Taxi à Erstein</a> — <a href="/taxi-benfeld.html" class="info-link">Taxi à Benfeld</a> — <a href="/taxi-obernai.html" class="info-link">Taxi à Obernai</a></p>
+        </div>
+        <div class="contact-box">
+          <h3>Contact direct</h3>
+          <p><strong>Téléphone :</strong> <a href="tel:0676729327">06 76 72 93 27</a></p>
+          <p><strong>Email :</strong> <a href="mailto:alsace.taximaxime@gmail.com">alsace.taximaxime@gmail.com</a></p>
+          <p class="contact-note">Pensez à préparer votre prescription médicale de transport pour le jour du trajet.</p>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer identique -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="current-year"></span> ALSACE TAXI MAXIME – Tous droits réservés.</p>
       <div class="footer-links">
+        <a href="/">Accueil</a>
         <a href="/taxi-erstein.html">Taxi à Erstein</a>
-        <a href="/vsl-erstein.html">VSL à Erstein</a>
-        <a href="/infos.html">Infos / Qui sommes-nous</a>
+        <a href="/taxi-benfeld.html">Taxi à Benfeld</a>
+        <a href="/taxi-obernai.html">Taxi à Obernai</a>
+        <a href="/taxi-gerstheim.html">Taxi à Gerstheim</a>
+        <a href="/vsl-erstein.html">VSL Erstein</a>
         <a href="/mentions-legales.html">Mentions légales</a>
         <a href="/confidentialite.html">Confidentialité</a>
       </div>
     </div>
-
-    <script>
-      document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
   </footer>
 
-  <!-- JSON-LD (SEO propre) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "VSL à Erstein : transport médical assis",
-    "url": "https://www.alsace-taxi-maxime.fr/vsl-erstein.html",
-    "inLanguage": "fr",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "ALSACE TAXI MAXIME",
-      "url": "https://www.alsace-taxi-maxime.fr/"
-    }
-  }
+  <script>
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+        btn.setAttribute('aria-expanded', !isOpen);
+      });
+    });
   </script>
-
 </body>
 </html>
