@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TaxiService",
+  "name": "ALSACE TAXI MAXIME",
+  "image": "https://www.alsace-taxi-maxime.fr/assets/logo.png",
+  "url": "https://www.alsace-taxi-maxime.fr/taxi-obernai.html",
+  "telephone": "+33676729327",
+  "areaServed": [{"@type":"City","name":"Obernai"}],
+  "serviceType": ["Taxi conventionné CPAM","Transports médicaux assis","Radiothérapie","Chimiothérapie"]
+}
+</script>
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17771925884"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17771925884');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <title>Taxi conventionné Obernai | ALSACE TAXI MAXIME</title>
+  <meta name="description" content="Taxi conventionné CPAM à Obernai. Transport médical assis vers hôpitaux de Strasbourg, radiothérapie, chimiothérapie. Disponible 7j/7. Appelez le 06 76 72 93 27." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo-block">
+        <img src="assets/logo.png" alt="ALSACE TAXI MAXIME - Taxi conventionné en Alsace" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">ALSACE TAXI MAXIME</span>
+          <span class="logo-subtitle">Taxi conventionné en Alsace</span>
+        </div>
+      </a>
+      <div class="header-right">
+        <nav class="main-nav">
+          <a href="/">Accueil</a>
+          <a href="/#services">Services</a>
+          <a href="/#reservation">Réservation</a>
+          <a href="/#contact">Contact</a>
+        </nav>
+        <a href="tel:+33676729327" class="btn header-phone">06 76 72 93 27</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Taxi conventionné à Obernai</h1>
+          <p>
+            ALSACE TAXI MAXIME assure vos transports médicaux depuis <strong>Obernai</strong> vers les hôpitaux et cliniques de Strasbourg. Taxi conventionné CPAM, bon de transport accepté.
+          </p>
+          <p>
+            Trajets vers l'ICANS, le Nouvel Hôpital Civil, le CHU de Hautepierre, Rhena, la Clinique Sainte-Anne et la Clinique de l'Orangerie.
+          </p>
+          <div class="hero-actions">
+            <a href="tel:0676729327" class="btn ghost-btn">Appeler maintenant</a>
+          </div>
+          <p class="hero-info">Taxi conventionné CPAM — Bon de transport accepté</p>
+        </div>
+
+        <div class="hero-card">
+          <h2>Réserver un trajet depuis Obernai</h2>
+          <p class="hero-card-subtitle">Réponse rapide par téléphone ou SMS.</p>
+          <form class="booking-form" action="https://formspree.io/f/xvgeqqyp" method="POST" id="reservation">
+            <input type="hidden" name="_subject" value="Demande de trajet Obernai - ALSACE TAXI MAXIME" />
+            <input type="hidden" name="_redirect" value="https://alsace-taxi-maxime-site.vercel.app/merci.html" />
+            <div class="form-row">
+              <label for="name">Nom et prénom</label>
+              <input type="text" id="name" name="name" required placeholder="Ex : DUPONT Marie" />
+            </div>
+            <div class="form-row">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="telephone" required placeholder="Ex : 06 76 72 93 27" />
+            </div>
+            <div class="form-row">
+              <label for="date">Date du trajet</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form-row">
+              <label for="time">Heure du trajet</label>
+              <input type="time" id="time" name="heure" required />
+            </div>
+            <div class="form-row">
+              <label for="from">Lieu de prise en charge</label>
+              <input type="text" id="from" name="depart" required placeholder="Adresse à Obernai" />
+            </div>
+            <div class="form-row">
+              <label for="to">Destination</label>
+              <input type="text" id="to" name="arrivee" required placeholder="Hôpital, médecin, gare..." />
+            </div>
+            <div class="form-row">
+              <label for="type">Type de trajet</label>
+              <select id="type" name="type">
+                <option value="medical">Trajet avec bon de transport</option>
+                <option value="gare">Gare / Aéroport</option>
+                <option value="autre">Autre trajet</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="message">Informations utiles (facultatif)</label>
+              <textarea id="message" name="commentaires" rows="3" placeholder="Ex : fauteuil roulant, accompagnant, etc."></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn full-width">Envoyer la demande</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="transport-obernai">
+      <div class="container">
+        <h2 class="section-title">Transport médical assis depuis Obernai</h2>
+        <p>
+          Vous habitez à <strong>Obernai</strong> et vous avez besoin d'un transport médical assis ? ALSACE TAXI MAXIME est un <strong>taxi conventionné par la CPAM</strong>, qui intervient régulièrement sur Obernai et le Piémont des Vosges.
+        </p>
+        <p>
+          Avec un <strong>bon de transport prescrit par votre médecin</strong>, votre trajet est pris en charge par l'Assurance Maladie. Nous assurons vos rendez-vous réguliers : radiothérapie, chimiothérapie, immunothérapie, hôpital de jour, hospitalisation et consultations ambulatoires.
+        </p>
+        <p>
+          Vous recherchez un <strong>VSL à Obernai</strong> ? Un taxi conventionné assure exactement le même type de transport médical assis, avec la même prise en charge CPAM.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Trajets depuis Obernai vers Strasbourg</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>ICANS — Institut de cancérologie</h3>
+            <p>Transport régulier pour vos séances de radiothérapie, chimiothérapie et immunothérapie à l'ICANS depuis Obernai.</p>
+          </article>
+          <article class="card">
+            <h3>CHU — Nouvel Hôpital Civil</h3>
+            <p>Trajets vers le CHU de Strasbourg, le Nouvel Hôpital Civil et Hautepierre pour vos consultations et hospitalisations.</p>
+          </article>
+          <article class="card">
+            <h3>Cliniques privées</h3>
+            <p>Transport vers la Clinique Sainte-Anne, Rhena et la Clinique de l'Orangerie depuis Obernai et le secteur du Piémont.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-layout">
+        <div>
+          <h2 class="section-title">Votre taxi à Obernai</h2>
+          <p>Intervention sur Obernai et tout le secteur : Bœrsch, Bernardvillé, Barr, Gertwiller, Bernhardsweiler, Ottrott et villages environnants.</p>
+          <p>Disponible 7j/7 pour vos transports médicaux et privés.</p>
+        </div>
+        <div class="contact-box">
+          <h3>Réserver par téléphone</h3>
+          <p><strong>Téléphone :</strong> <a href="tel:0676729327">06 76 72 93 27</a></p>
+          <p><strong>Email :</strong> <a href="mailto:alsace.taximaxime@gmail.com">alsace.taximaxime@gmail.com</a></p>
+          <p class="contact-note">Pour les trajets médicaux, pensez à préparer votre bon de transport et votre attestation de droits.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year"></span> ALSACE TAXI MAXIME – Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="/">Accueil</a>
+        <a href="/taxi-erstein.html">Taxi à Erstein</a>
+        <a href="/taxi-benfeld.html">Taxi à Benfeld</a>
+        <a href="/taxi-gerstheim.html">Taxi à Gerstheim</a>
+        <a href="/mentions-legales.html">Mentions légales</a>
+        <a href="/confidentialite.html">Confidentialité</a>
+      </div>
+    </div>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
