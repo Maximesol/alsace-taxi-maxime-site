@@ -9,113 +9,149 @@
   "url": "https://www.alsace-taxi-maxime.fr/",
   "telephone": "+33676729327",
   "areaServed": [
-    {"@type":"City","name":"Erstein"},
-    {"@type":"City","name":"Obernai"},
-    {"@type":"City","name":"Matzenheim"},
-    {"@type":"City","name":"Osthouse"},
-    {"@type":"City","name":"Sand"},
-    {"@type":"City","name":"Benfeld"},
-    {"@type":"City","name":"Gerstheim"},
-    {"@type":"City","name":"Krafft"},
-    {"@type":"City","name":"Limersheim"},
-    {"@type":"City","name":"Hipsheim"},
-    {"@type":"City","name":"Hindisheim"},
-    {"@type":"City","name":"Krautergersheim"},
-    {"@type":"City","name":"Obenheim"},
-    {"@type":"City","name":"Nordhouse"}
+    {"@type":"City","name":"Erstein"},{"@type":"City","name":"Obernai"},
+    {"@type":"City","name":"Matzenheim"},{"@type":"City","name":"Osthouse"},
+    {"@type":"City","name":"Sand"},{"@type":"City","name":"Benfeld"},
+    {"@type":"City","name":"Gerstheim"},{"@type":"City","name":"Krafft"},
+    {"@type":"City","name":"Limersheim"},{"@type":"City","name":"Hipsheim"},
+    {"@type":"City","name":"Hindisheim"},{"@type":"City","name":"Krautergersheim"},
+    {"@type":"City","name":"Obenheim"},{"@type":"City","name":"Nordhouse"}
   ],
-  "serviceType": [
-    "Taxi conventionné CPAM",
-    "Transports médicaux assis",
-    "Radiothérapie",
-    "Chimiothérapie",
-    "Immunothérapie",
-    "Hôpital de Jour",
-    "Hospitalisation",
-    "Ambulatoire",
-    "ICANS",
-    "clinique Sainte-Anne",
-    "Clinique de l'orangerie"
-  ],
-  "availableChannel": {
-    "@type": "ServiceChannel",
-    "servicePhone": {
-      "@type": "ContactPoint",
-      "telephone": "+33676729327",
-      "contactType": "customer service",
-      "availableLanguage": ["fr"]
-    }
-  }
+  "serviceType": ["Taxi conventionné CPAM","Transports médicaux assis","Radiothérapie","Chimiothérapie","Immunothérapie","Hôpital de Jour","Hospitalisation","Ambulatoire","ICANS","clinique Sainte-Anne","Clinique de l'orangerie"],
+  "availableChannel": {"@type":"ServiceChannel","servicePhone":{"@type":"ContactPoint","telephone":"+33676729327","contactType":"customer service","availableLanguage":["fr"]}}
 }
 </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.25.0/tarteaucitron.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Quelle est la différence entre un VSL et un taxi conventionné ?","acceptedAnswer":{"@type":"Answer","text":"Le VSL et le taxi conventionné assurent tous deux des transports médicaux assis sur prescription. Votre médecin peut prescrire l'un ou l'autre selon votre situation."}},
+    {"@type":"Question","name":"Quelles villes sont desservies ?","acceptedAnswer":{"@type":"Answer","text":"Erstein, Benfeld, Obernai, Matzenheim, Gerstheim, Plobsheim, Osthouse, Sand, Hindisheim et tout le secteur environnant."}},
+    {"@type":"Question","name":"Vers quels hôpitaux assurez-vous les trajets ?","acceptedAnswer":{"@type":"Answer","text":"ICANS, Nouvel Hôpital Civil, CHU Hautepierre, Rhena, Clinique Sainte-Anne et Clinique de l'Orangerie à Strasbourg."}}
+  ]
+}
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.25.0/tarteaucitron.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.25.0/tarteaucitron.services.min.js"></script>
-
 <script>
-tarteaucitron.init({
-  privacyUrl: "/confidentialite.html",
-  orientation: "bottom",
-  DenyAllCta: true,
-  AcceptAllCta: true,
-  highPrivacy: true,
-  showIcon: false
-});
+  tarteaucitron.init({
+    privacyUrl: "/confidentialite.html",
+    orientation: "bottom",
+    DenyAllCta: true,
+    AcceptAllCta: true,
+    highPrivacy: true,
+    showIcon: false
+  });
 </script>
+
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17771925884"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag — une seule instance, bug snippet conversion corrigé -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17771925884"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17771925884');
+  </script>
 
-  gtag('config', 'AW-17771925884');
-</script>
   <meta name="google-site-verification" content="gbNENTkSSgub30G--ivDckLulMAcw3GnJKETT5P0HVE" />
   <meta charset="UTF-8" />
   <meta name="google-site-verification" content="M_N6oj4ZFBBl9CH6G63CjjNAU7kkmfCs3iGNRLXWGPI" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
   <title>Taxi conventionné Erstein & secteur | ALSACE TAXI MAXIME</title>
-  <meta name="description" content="Taxi conventionné basé à Erstein. Transports médicaux vers ICANS, Nouvel Hôpital Civil, CHU, Rhena, Clinique Sainte Anne, Clinique de l'Orangerie, radiothérapie, chimiothérapie, immunothérapie, hôpital de jour et hospitalisation." />
-
-  <!-- Open Graph / Réseaux sociaux -->
+  <meta name="description" content="Taxi conventionné CPAM basé à Erstein. Transports médicaux vers ICANS, Nouvel Hôpital Civil, CHU, Rhena, Clinique Sainte-Anne, Clinique de l'Orangerie. Radiothérapie, chimiothérapie, hôpital de jour. Secteur Benfeld, Obernai, Matzenheim." />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="ALSACE TAXI MAXIME | Taxi conventionné en Alsace" />
-  <meta property="og:description" content="Taxi conventionné pour vos trajets médicaux, gares, aéroports et longues distances en Alsace." />
+  <meta property="og:description" content="Taxi conventionné pour vos trajets médicaux en Alsace. Bon de transport accepté." />
   <meta property="og:image" content="/assets/hero.jpg" />
   <meta property="og:url" content="https://www.alsace-taxi-maxime.fr/" />
-
-  <!-- Police Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17771925884"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <style>
+    /* === BOUTON STICKY MOBILE === */
+    .sticky-call { display: none; }
+    @media (max-width: 768px) {
+      .sticky-call {
+        display: flex;
+        position: fixed;
+        bottom: 0; left: 0; right: 0;
+        z-index: 100;
+        background: linear-gradient(135deg, #0ea5e9, #22d3ee);
+        color: #020617;
+        font-weight: 700;
+        font-size: 1.1rem;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        padding: 1rem;
+        box-shadow: 0 -4px 24px rgba(14,165,233,0.4);
+      }
+      .sticky-call svg { width: 22px; height: 22px; flex-shrink: 0; }
+      body { padding-bottom: 64px; }
+    }
 
-  gtag('config', 'AW-17771925884');
-</script>
+    /* === FAQ === */
+    .faq-list { display: flex; flex-direction: column; gap: 0.75rem; max-width: 780px; }
+    .faq-item {
+      background: linear-gradient(135deg, rgba(15,23,42,0.9), rgba(15,23,42,0.98));
+      border: 1px solid rgba(30,64,175,0.7);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .faq-question {
+      width: 100%; background: none; border: none;
+      color: var(--color-white); font-size: 0.97rem; font-weight: 500;
+      text-align: left; padding: 1rem 1.2rem; cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 1rem; font-family: inherit;
+    }
+    .faq-question:hover { color: var(--color-primary); }
+    .faq-icon { flex-shrink: 0; width: 20px; height: 20px; color: var(--color-primary); transition: transform 0.25s ease; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      padding: 0 1.2rem; font-size: 0.9rem;
+      color: var(--color-text-soft); line-height: 1.65;
+    }
+    .faq-item.open .faq-answer { max-height: 200px; padding: 0 1.2rem 1rem; }
 
-  <!-- Event snippet for Page vue (1) conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-17771925884/bPxLCIXRqYQcEPyiqJpC',
-      'value': 1.0,
-      'currency': 'EUR'
-  });
-</script>
+    /* === AVIS === */
+    .avis-bloc { display: flex; align-items: center; gap: 0.5rem; margin-top: 1rem; }
+    .avis-etoiles { color: #facc15; font-size: 1.1rem; letter-spacing: 1px; }
+    .avis-texte { font-size: 0.85rem; color: var(--color-text-soft); }
 
-
+    /* === SELECT === */
+    select {
+      background: rgba(15,23,42,0.95);
+      border-radius: 999px;
+      border: 1px solid rgba(30,64,175,0.7);
+      padding: 0.6rem 0.85rem;
+      font-size: 0.9rem;
+      color: var(--color-text);
+      outline: none;
+      font-family: inherit;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- BOUTON STICKY MOBILE -->
+  <a href="tel:+33676729327" class="sticky-call" aria-label="Appeler ALSACE TAXI MAXIME">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+    </svg>
+    Appeler — 06 76 72 93 27
+  </a>
+
   <header class="site-header">
     <div class="container header-inner">
       <a href="/" class="logo-block">
@@ -125,7 +161,6 @@ tarteaucitron.init({
           <span class="logo-subtitle">Taxi conventionné en Alsace</span>
         </div>
       </a>
-
       <div class="header-right">
         <nav class="main-nav">
           <a href="/taxi-erstein.html">Taxi Erstein</a>
@@ -133,142 +168,98 @@ tarteaucitron.init({
           <a href="#reservation">Réservation</a>
           <a href="#contact">Contact</a>
         </nav>
-
-        <a href="tel:+33676729327" class="btn header-phone">0676729327</a>
+        <a href="tel:+33676729327" class="btn header-phone">06 76 72 93 27</a>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- Hero -->
     <section class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
-          <h1>Votre taxi conventionné en Alsace, disponible 7j/7 </h1>
+          <h1>Votre taxi conventionné en Alsace, disponible 7j/7</h1>
+          <p>Transports médicaux sur prescription, gares, aéroports et longues distances. Service ponctuel et confortable, adapté aux personnes âgées et à mobilité réduite.</p>
           <p>
-            Transports médicaux, gares, aéroports et longues distances.
-            Service ponctuel, confortable et 100% adapté à vos besoins.
-          </p>
-          <p>
-            Besoin d’un <a href="/taxi-erstein.html" class="hero-link">taxi à Erstein</a> ? Découvrez notre page dédiée.
+            Besoin d'un <a href="/taxi-erstein.html" class="hero-link">taxi à Erstein</a> ?
+            Aussi disponible à <a href="/taxi-benfeld.html" class="hero-link">Benfeld</a>,
+            <a href="/taxi-obernai.html" class="hero-link">Obernai</a> et
+            <a href="/taxi-matzenheim.html" class="hero-link">Matzenheim</a>.
           </p>
           <div class="hero-actions">
-            <a href="tel:0676729327" class="btn ghost-btn">Appeler maintenant</a>
+            <a href="tel:0676729327" class="btn ghost-btn">📞 Appeler maintenant</a>
           </div>
-          <p class="hero-info">
-            Taxi conventionné  
-          </p>
+          <div class="avis-bloc">
+            <span class="avis-etoiles">★★★★★</span>
+            <span class="avis-texte">5/5 — Plus de 15 avis Google</span>
+          </div>
+          <p class="hero-info" style="margin-top:0.5rem;">Taxi conventionné — Bon de transport accepté</p>
         </div>
 
         <div class="hero-card">
           <h2>Réserver un trajet</h2>
           <p class="hero-card-subtitle">Réponse rapide par téléphone ou SMS.</p>
-
-          <!-- FORMULAIRE FORMSPREE -->
-          <form
-  class="booking-form"
-  action="https://formspree.io/f/xvgeqqyp"
-  method="POST"
-  id="reservation"
->
-  <input type="hidden" name="_subject" value="Demande de trajet - ALSACE TAXI MAXIME" />
-  <input type="hidden" name="_redirect" value="https://alsace-taxi-maxime-site.vercel.app/merci.html" />
-
-  <div class="form-row">
-    <label for="name">Nom et prénom</label>
-    <input type="text" id="name" name="name" required placeholder="Ex : DUPONT Marie" />
-  </div>
-
-  <div class="form-row">
-    <label for="phone">Téléphone</label>
-    <input type="tel" id="phone" name="telephone" required placeholder="Ex : 06 76 72 93 27" />
-  </div>
-
-  <div class="form-row">
-    <label for="date">Date du trajet</label>
-    <input type="date" id="date" name="date" required />
-  </div>
-
-  <div class="form-row">
-    <label for="time">Heure du trajet</label>
-    <input type="time" id="time" name="heure" required />
-  </div>
-
-  <div class="form-row">
-    <label for="from">Lieu de prise en charge</label>
-    <input type="text" id="from" name="depart" required placeholder="Ville ou adresse courte" />
-  </div>
-
-  <div class="form-row">
-    <label for="to">Destination</label>
-    <input type="text" id="to" name="arrivee" required placeholder="Hôpital, médecin, gare..." />
-  </div>
-
-  <div class="form-row">
-    <label for="type">Type de trajet</label>
-    <select id="type" name="type">
-      <option value="medical">Trajet avec bon de transport </option>
-      <option value="gare">Gare / Aéroport</option>
-      <option value="autre">Autre trajet</option>
-    </select>
-  </div>
-
-  <div class="form-row">
-    <label for="message">Informations utiles (facultatif)</label>
-    <textarea id="message" name="commentaires" rows="3" placeholder="Ex : fauteuil roulant, accompagnant, etc."></textarea>
-  </div>
-
-  <button type="submit" class="btn primary-btn full-width">
-    Envoyer la demande
-  </button>
-</form>
-          <!-- FIN FORMULAIRE -->
+          <form class="booking-form" action="https://formspree.io/f/xvgeqqyp" method="POST" id="reservation">
+            <input type="hidden" name="_subject" value="Demande de trajet - ALSACE TAXI MAXIME" />
+            <input type="hidden" name="_redirect" value="https://alsace-taxi-maxime-site.vercel.app/merci.html" />
+            <div class="form-row">
+              <label for="name">Nom et prénom</label>
+              <input type="text" id="name" name="name" required placeholder="Ex : DUPONT Marie" />
+            </div>
+            <div class="form-row">
+              <label for="phone">Téléphone</label>
+              <input type="tel" id="phone" name="telephone" required placeholder="Ex : 06 76 72 93 27" />
+            </div>
+            <div class="form-row">
+              <label for="date">Date du trajet</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form-row">
+              <label for="time">Heure du trajet</label>
+              <input type="time" id="time" name="heure" required />
+            </div>
+            <div class="form-row">
+              <label for="from">Lieu de prise en charge</label>
+              <input type="text" id="from" name="depart" required placeholder="Ville ou adresse courte" />
+            </div>
+            <div class="form-row">
+              <label for="to">Destination</label>
+              <input type="text" id="to" name="arrivee" required placeholder="Hôpital, médecin, gare..." />
+            </div>
+            <div class="form-row">
+              <label for="type">Type de trajet</label>
+              <select id="type" name="type">
+                <option value="medical">Trajet avec bon de transport</option>
+                <option value="gare">Gare / Aéroport</option>
+                <option value="autre">Autre trajet</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="message">Informations utiles (facultatif)</label>
+              <textarea id="message" name="commentaires" rows="3" placeholder="Ex : fauteuil roulant, accompagnant, etc."></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn full-width">Envoyer la demande</button>
+          </form>
         </div>
       </div>
     </section>
-    
+
     <section class="section" id="transports-medicaux">
-  <div class="container">
-    <h2 class="section-title">Transports médicaux vers les hôpitaux et cliniques de Strasbourg</h2>
-    <p>
-      ALSACE TAXI MAXIME est un <strong>taxi conventionné par la CPAM</strong> pour vos trajets médicaux assis.
-      Nous assurons les transports vers les principaux établissements de santé de Strasbourg et environs&nbsp;:
-      <strong>ICANS</strong>, <strong>Nouvel Hôpital Civil</strong>, <strong>CHU</strong>, <strong>Rhena</strong>,
-      <strong>Clinique Sainte Anne</strong>, <strong>Clinique de l'Orangerie</strong>, mais aussi autres hôpitaux,
-      cliniques et centres spécialisés.
-    </p>
-    <p>
-      Les patients recherchent parfois un <strong>VSL</strong> pour leurs déplacements médicaux.
-      Un <strong>taxi conventionné</strong> assure le même type de transport médical assis,
-      ALSACE TAXI MAXIME est un taxi conventionné pour ce type de trajet.
-</p>
-    <p>
-      Nous vous accompagnons pour vos séances de <strong>radiothérapie</strong>, <strong>chimiothérapie</strong>,
-      <strong>immunothérapie</strong>, ainsi que pour les rendez-vous en
-      <strong>hôpital de jour</strong>, en <strong>hospitalisation</strong> ou en
-      <strong>ambulatoire</strong>. Le service est adapté aux personnes âgées et à mobilité réduite.
-    </p>
-  </div>
-</section>
+      <div class="container">
+        <h2 class="section-title">Transports médicaux vers les hôpitaux et cliniques de Strasbourg</h2>
+        <p>ALSACE TAXI MAXIME est un <strong>taxi conventionné par la CPAM</strong> pour vos trajets médicaux assis. Nous assurons les transports vers les principaux établissements de santé de Strasbourg et environs : <strong>ICANS</strong>, <strong>Nouvel Hôpital Civil</strong>, <strong>CHU Hautepierre</strong>, <strong>Rhena</strong>, <strong>Clinique Sainte-Anne</strong>, <strong>Clinique de l'Orangerie</strong> et tout autre établissement sur prescription.</p>
+        <p>Les patients recherchent parfois un <strong>VSL</strong> pour leurs déplacements médicaux. Un <strong>taxi conventionné</strong> assure le même type de transport médical assis. <a href="/vsl-erstein.html" class="info-link">En savoir plus sur VSL et taxi conventionné.</a></p>
+        <p>Nous vous accompagnons pour vos séances de <strong>radiothérapie</strong>, <strong>chimiothérapie</strong>, <strong>immunothérapie</strong>, ainsi que pour les rendez-vous en <strong>hôpital de jour</strong>, en <strong>hospitalisation</strong> ou en <strong>ambulatoire</strong>. Service adapté aux personnes âgées et à mobilité réduite.</p>
+      </div>
+    </section>
+
     <section class="section" id="villes-desservies">
-  <div class="container">
-    <h2 class="section-title">Taxi conventionné autour d’Erstein</h2>
-    <p>
-      ALSACE TAXI MAXIME dessert un large secteur autour d’Erstein pour vos trajets médicaux, gares et aéroports.
-    </p>
-    <p>
-      Nous intervenons sur appel notamment à&nbsp;:
-      <strong>Erstein</strong>, <strong>Obernai</strong>, <strong>Matzenheim</strong>, <strong>Osthouse</strong>,
-      <strong>Sand</strong>, <strong>Benfeld</strong>, <strong>Gerstheim</strong>, <strong>Krafft</strong>,
-      <strong>Limersheim</strong>, <strong>Hipsheim</strong>, <strong>Hindisheim</strong>,
-      <strong>Krautergersheim</strong>, <strong>Obenheim</strong> et <strong>Nordhouse</strong>.
-    </p>
-    <p>
-      En tant que <strong>taxi conventionné</strong>, nous pouvons réaliser vos trajets sur prescription médicale, ainsi que vos déplacements privés ou professionnels.
-    </p>
-  </div>
-</section>
-    <!-- COLLER CE BLOC JUSTE APRÈS LA BALISE </section> DE LA SECTION id="villes-desservies" -->
+      <div class="container">
+        <h2 class="section-title">Taxi conventionné autour d'Erstein</h2>
+        <p>ALSACE TAXI MAXIME dessert un large secteur autour d'Erstein pour vos trajets médicaux, gares et aéroports.</p>
+        <p>Nous intervenons notamment à : <strong>Erstein</strong>, <strong>Obernai</strong>, <strong>Matzenheim</strong>, <strong>Osthouse</strong>, <strong>Sand</strong>, <strong>Benfeld</strong>, <strong>Gerstheim</strong>, <strong>Krafft</strong>, <strong>Limersheim</strong>, <strong>Hipsheim</strong>, <strong>Hindisheim</strong>, <strong>Krautergersheim</strong>, <strong>Obenheim</strong> et <strong>Nordhouse</strong>.</p>
+        <p>En tant que <strong>taxi conventionné</strong>, nous réalisons vos trajets sur prescription médicale, ainsi que vos déplacements privés ou professionnels.</p>
+      </div>
+    </section>
 
     <section class="section section-alt" id="pages-villes">
       <div class="container">
@@ -280,7 +271,7 @@ tarteaucitron.init({
           </article>
           <article class="card">
             <h3><a href="/taxi-benfeld.html" class="info-link">Taxi à Benfeld</a></h3>
-            <p>Transport médical conventionné depuis Benfeld vers les hôpitaux de Strasbourg.</p>
+            <p>Transport médical sur prescription depuis Benfeld vers les hôpitaux de Strasbourg.</p>
           </article>
           <article class="card">
             <h3><a href="/taxi-obernai.html" class="info-link">Taxi à Obernai</a></h3>
@@ -296,59 +287,79 @@ tarteaucitron.init({
           </article>
           <article class="card">
             <h3><a href="/taxi-plobsheim.html" class="info-link">Taxi à Plobsheim</a></h3>
-            <p>Transport médical conventionné depuis Plobsheim vers Strasbourg et environs.</p>
+            <p>Transport médical sur prescription depuis Plobsheim vers Strasbourg et environs.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Services -->
     <section class="section" id="services">
       <div class="container">
         <h2 class="section-title">Nos services</h2>
-
         <div class="cards-grid">
           <article class="card">
             <h3>Transports médicaux conventionnés</h3>
-            <p>
-              Trajets vers hôpitaux (ICANS, CHU hautepierre, nouvel Hopital Civil),
-              cliniques (Sainte-Anne, Rhena) centres de soins et spécialistes.
-            </p>
-            <a class="info-link" href="/vsl-erstein.html" rel="noopener">
-            Informations : transport médical assis (VSL) et taxi conventionné
-            </a>
+            <p>Trajets vers hôpitaux (ICANS, CHU Hautepierre, Nouvel Hôpital Civil), cliniques (Sainte-Anne, Rhena) centres de soins et spécialistes.</p>
+            <a class="info-link" href="/vsl-erstein.html" rel="noopener">Informations : transport médical assis (VSL) et taxi conventionné</a>
           </article>
-
           <article class="card">
             <h3>Gares & aéroports</h3>
-            <p>
-              Transferts vers les gares et aéroports de la région, horaires garantis, suivi des retards.
-            </p>
+            <p>Transferts vers les gares et aéroports de la région, horaires garantis, suivi des retards.</p>
           </article>
-
           <article class="card">
             <h3>Longues distances</h3>
-            <p>
-              Trajets longue distance en France et pays frontaliers, confort et sécurité à bord.
-            </p>
+            <p>Trajets longue distance en France et pays frontaliers, confort et sécurité à bord.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Contact / Zone -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <h2 class="section-title">Questions fréquentes</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Quelle est la différence entre un VSL et un taxi conventionné ?
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+            </button>
+            <div class="faq-answer">Le VSL (Véhicule Sanitaire Léger) et le taxi conventionné assurent tous deux des transports médicaux assis sur prescription. Votre médecin peut prescrire l'un ou l'autre selon votre situation médicale.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Quelles villes sont desservies ?
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+            </button>
+            <div class="faq-answer">Nous intervenons sur Erstein, Benfeld, Obernai, Matzenheim, Gerstheim, Plobsheim, Osthouse, Sand, Hindisheim et tout le secteur environnant dans un rayon d'environ 30 km.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Vers quels hôpitaux assurez-vous les trajets ?
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+            </button>
+            <div class="faq-answer">Nous assurons les trajets vers l'ICANS, le Nouvel Hôpital Civil, le CHU Hautepierre, Rhena, la Clinique Sainte-Anne et la Clinique de l'Orangerie à Strasbourg, ainsi que tout autre établissement sur prescription médicale.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Comment réserver un trajet ?
+              <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+            </button>
+            <div class="faq-answer">Appelez directement le 06 76 72 93 27 ou envoyez un SMS. Vous pouvez aussi utiliser le formulaire de réservation sur cette page. Munissez-vous de votre bon de transport et de votre attestation de droits.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-alt" id="contact">
       <div class="container contact-layout">
         <div>
-          <h2 class="section-title">Zone d’intervention</h2>
-          <p>
-            Basé à Erstein en Alsace, votre taxi intervient dans toute la région sur appels.
-            ADS Hindisheim.
-          </p>
+          <h2 class="section-title">Zone d'intervention</h2>
+          <p>ALSACE TAXI MAXIME est basé à <strong>Erstein</strong>, titulaire d'une autorisation de stationnement (ADS) de <strong>Hindisheim</strong>.</p>
+          <p>Nous pouvons intervenir <strong>partout en France sur réservation</strong> — que ce soit pour un trajet local, une longue distance ou un transport médical sur prescription.</p>
         </div>
         <div class="contact-box">
           <h3>Contact direct</h3>
-          <p><strong>Téléphone :</strong> <a href="tel:0676729327">0676729327</a></p>
+          <p><strong>Téléphone :</strong> <a href="tel:0676729327">06 76 72 93 27</a></p>
           <p><strong>Email :</strong> <a href="mailto:alsace.taximaxime@gmail.com">alsace.taximaxime@gmail.com</a></p>
           <p class="contact-note">Pour les trajets médicaux, pensez à préparer votre bon de transport et votre attestation de droits.</p>
         </div>
@@ -362,15 +373,28 @@ tarteaucitron.init({
       <div class="footer-links">
         <a href="/infos.html">Infos / Qui sommes-nous</a>
         <a href="/taxi-erstein.html">Taxi à Erstein</a>
+        <a href="/taxi-benfeld.html">Taxi à Benfeld</a>
+        <a href="/taxi-obernai.html">Taxi à Obernai</a>
         <a href="/taxi-gerstheim.html">Taxi à Gerstheim</a>
+        <a href="/vsl-erstein.html">VSL Erstein</a>
         <a href="/mentions-legales.html">Mentions légales</a>
         <a href="/confidentialite.html">Confidentialité</a>
       </div>
     </div>
-
-    <script>
-      document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
+    <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
   </footer>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+        btn.setAttribute('aria-expanded', !isOpen);
+      });
+    });
+  </script>
+
 </body>
 </html>
